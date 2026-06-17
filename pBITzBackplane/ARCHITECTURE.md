@@ -94,7 +94,6 @@ The power-control island:
 | `SW1` | `SW_Push` | Power button input path to `U1.7/PB2` through `R1`. |
 | `R5` | `10k` | Pull-up from ATtiny reset net to `+5V_AON`. |
 | `R6` | `10k` | Pull-down from Q1 gate to `GND`. |
-| `R7` | `10k` | Pull-up from `/Backplane/~{SHUTDOWN_RQ}` to `+5V_AON`. |
 | `R8` | `10k` | Pull-up from `/Backplane/~{PWR_OFF}` to `+5V_AON`. |
 | `D1`, `D2` | LED indicators | LED anodes on `+5V`; cathodes return through `R20` and `R19` respectively. |
 
@@ -115,24 +114,29 @@ ATtiny pin use:
 
 The PMU is the always-on power-control island powered from `+5V_AON`. The IO
 Controller participates in shutdown through the two active-low backplane power
-control nets:
+control nets. In firmware discussions, `/PWR_OFF` and `/SHUTDOWN_RQ` refer to
+the active-low schematic nets `/Backplane/~{PWR_OFF}` and
+`/Backplane/~{SHUTDOWN_RQ}`.
 
-| Signal | Direction | Protocol | Electrical idle |
-| --- | --- | --- | --- |
-| `/Backplane/~{PWR_OFF}` | To PMU | Level signal. `HIGH` means unasserted and requests/permits `KEEP POWER ON`; `LOW` means asserted and requests `REMOVE POWER`. | Pulled high by `R8` to `+5V_AON`. |
-| `/Backplane/~{SHUTDOWN_RQ}` | From PMU | Edge signal. The PMU uses the assertion edge to advise the IO Controller to clean up for shutdown. | Pulled high by `R7` to `+5V_AON`. |
+| Signal | Direction | Pull-up | PMU / ATtiny mode | IO Controller / requester mode | Protocol |
+| --- | --- | --- | --- | --- | --- |
+| `/PWR_OFF` | To PMU | `+5V_AON` | Input | Any requester is output-low or Hi-Z only; never drive high. | Level signal. `HIGH` means unasserted and requests/permits `KEEP POWER ON`; `LOW` means asserted and requests `REMOVE POWER`. |
+| `/SHUTDOWN_RQ` | From PMU | IO Controller `+5V`; no backplane pull-up/down. | Output-low or Hi-Z only; never drive high. | IO Controller PIC input only, with `ANSEL` cleared. | Edge signal. The PMU uses the assertion edge to advise the IO Controller to clean up for shutdown. |
+
+Firmware must configure these pins as open-drain style participants: a device
+may assert by driving low, and must deassert by releasing the line to Hi-Z. The
+pull-up defines the high state.
 
 Shutdown sequence:
 
-1. During normal operation, `/Backplane/~{PWR_OFF}` remains high so the PMU
-   keeps power on.
+1. During normal operation, `/PWR_OFF` remains high by pull-up so the PMU keeps
+   power on.
 2. When the PMU wants an orderly shutdown, it signals the IO Controller on
-   `/Backplane/~{SHUTDOWN_RQ}` with an edge event.
+   `/SHUTDOWN_RQ` with an assertion edge, then releases the line.
 3. The IO Controller performs shutdown cleanup.
-4. When cleanup is complete, the IO Controller asserts `/Backplane/~{PWR_OFF}`
-   by driving it low.
-5. The PMU treats low `/Backplane/~{PWR_OFF}` as the level request to remove
-   power.
+4. When cleanup is complete, the IO Controller asserts `/PWR_OFF` by driving it
+   low.
+5. The PMU treats low `/PWR_OFF` as the level request to remove power.
 
 ## pBITz Slot Bus
 
@@ -205,7 +209,7 @@ Bus group summary:
 | Chip select | `CS0` through `CS3` | Commoned across all five slots; generated elsewhere. |
 | Clock | `CLK0` through `CLK3` | Passive slot-to-slot distribution in this active hierarchy. |
 | Service SPI | `MOSI`, `MISO`, `SLK_CLK`, `SPI_CS0`, `SPI_CS1`, `SPI_CD`, `~{SPI_INT}` | Shared on all slots and exposed on J7. |
-| Power control | `~{SHUTDOWN_RQ}`, `~{PWR_OFF}` | Common across slots and tied to the always-on ATtiny controller through pull-ups. |
+| Power control | `~{SHUTDOWN_RQ}`, `~{PWR_OFF}` | Common across slots and tied to the always-on ATtiny controller. `/PWR_OFF` is pulled up to `+5V_AON` on the backplane; `/SHUTDOWN_RQ` has no backplane pull-up/down and is pulled up by the IO Controller. |
 
 The bus pull-up architecture is intentional: all Data, Address, and non-SPI
 bus Control/select lines are pulled up. The slot clock nets and the SPI/service
@@ -283,9 +287,11 @@ on `J2` through `J6`.
 Power sequencing is centralized in the ATtiny island: `+5VSB` powers `U1`, `U1`
 observes the ATX `PWR_OK` and the local power button path, can pull ATX
 `PS_ON#` low through `Q1`, and also connects to the backplane-wide
-`~{SHUTDOWN_RQ}` and `~{PWR_OFF}` lines. Those two lines are pulled up to
-`+5V_AON`, making them available even before the main `+5V` and `+3V3` rails are
-enabled.
+`~{SHUTDOWN_RQ}` and `~{PWR_OFF}` lines. `/PWR_OFF` is pulled up to `+5V_AON`
+and is a level input to the PMU. `/SHUTDOWN_RQ` is an edge signal from the PMU
+with its system pull-up on the IO Controller `+5V` side. Firmware must treat
+both as active-low open-drain style signals and must not actively drive either
+line high.
 
 The service header is a direct breakout of the shared SPI/service nets plus
 `+5V`, `+3V3`, and ground. The pBITz connector pinout is therefore the main
