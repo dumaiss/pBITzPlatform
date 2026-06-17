@@ -7105,7 +7105,7 @@
 		(uuid "1c521cc2-2711-4daa-92ea-d84865dfe9b0")
 	)
 	(label "DP2"
-		(at 351.79 59.69 0)
+		(at 351.79 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7135,7 +7135,7 @@
 		(uuid "226b890c-a4ae-464d-b81f-c48838c1ca37")
 	)
 	(label "DM1"
-		(at 351.79 109.22 0)
+		(at 351.79 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7145,7 +7145,7 @@
 		(uuid "22ded4f7-8aff-4cc3-aa55-7b56fb55e9d3")
 	)
 	(label "DM2"
-		(at 351.79 62.23 0)
+		(at 351.79 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7325,7 +7325,7 @@
 		(uuid "c90d3e5c-fd58-46af-9584-84510a3e3249")
 	)
 	(label "DP1"
-		(at 351.79 106.68 0)
+		(at 351.79 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)

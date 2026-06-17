@@ -243,6 +243,8 @@ def _resolve(fname, root_dir):
     """Find a sheet file, tolerating space<->underscore differences in the Sheetfile property."""
     cands = [fname, fname.replace(' ', '_'), fname.replace('_', ' ')]
     for c in cands:
+        if os.path.exists(c):
+            return os.path.abspath(c)
         p = c if os.path.isabs(c) else os.path.join(root_dir, c)
         if os.path.exists(p):
             return p
