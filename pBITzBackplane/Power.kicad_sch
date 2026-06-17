@@ -2418,12 +2418,6 @@
 		(uuid "f46d5cec-642f-4ad7-b60c-fade9d5e768a")
 	)
 	(junction
-		(at 109.22 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f6bac87f-8880-4afe-8168-ed0154d8fb1a")
-	)
-	(junction
 		(at 80.01 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2589,16 +2583,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 146.05) (xy 109.22 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28714991-8d9d-4403-a769-10dd359b8ef6")
-	)
-	(wire
-		(pts
 			(xy 260.35 135.89) (xy 260.35 132.08)
 		)
 		(stroke
@@ -2749,7 +2733,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 146.05) (xy 109.22 151.13)
+			(xy 109.22 120.65) (xy 109.22 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2826,16 +2810,6 @@
 			(type default)
 		)
 		(uuid "75151bfc-03f6-4fa7-a834-c6c3b699e0f1")
-	)
-	(wire
-		(pts
-			(xy 116.84 130.81) (xy 116.84 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "767dae2d-c8ca-41e6-b055-ee4bd8666be1")
 	)
 	(wire
 		(pts
@@ -3039,16 +3013,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 120.65) (xy 109.22 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4fa1014-46ad-40dc-883d-49d3742f8860")
-	)
-	(wire
-		(pts
 			(xy 204.47 97.79) (xy 222.25 97.79)
 		)
 		(stroke
@@ -3206,16 +3170,6 @@
 			(type default)
 		)
 		(uuid "e5d1325c-3795-4e82-896b-7e87dd5d6148")
-	)
-	(wire
-		(pts
-			(xy 116.84 142.24) (xy 116.84 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6acefd6-4b2d-4f34-8e0f-7a1cf7225de0")
 	)
 	(wire
 		(pts
@@ -4340,206 +4294,6 @@
 			(project "pBITzBackplane"
 				(path "/09491510-942e-431b-9079-5419d947115d/1341913b-78c7-4763-99ca-789ce5f0fe08"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 116.84 138.43 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "340af667-2143-4684-8dc1-d2f81f60b3ef")
-		(property "Reference" "R7"
-			(at 112.268 138.43 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 114.808 138.43 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 118.618 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 116.84 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" "RC0603FR-0710KL"
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 116.84 138.43 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ff34d441-ead0-4eb6-bd7b-1ebac3923365")
-		)
-		(pin "1"
-			(uuid "e13d56c0-b59a-40e1-bb6a-209fa4d0d196")
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d/1341913b-78c7-4763-99ca-789ce5f0fe08"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7161,84 +6915,6 @@
 			(project "pBITzBackplane"
 				(path "/09491510-942e-431b-9079-5419d947115d/1341913b-78c7-4763-99ca-789ce5f0fe08"
 					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 116.84 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c3734a72-4917-43b5-bf42-830f45de74a8")
-		(property "Reference" "#PWR031"
-			(at 116.84 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V_AON"
-			(at 116.84 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 116.84 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "451ccce2-8a26-4b70-b9d5-548875adb38d")
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d/1341913b-78c7-4763-99ca-789ce5f0fe08"
-					(reference "#PWR031")
 					(unit 1)
 				)
 			)

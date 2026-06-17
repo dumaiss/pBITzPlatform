@@ -111,6 +111,29 @@ ATtiny pin use:
 | 7 | `PB2` | `/Power/PWR_SW` |
 | 8 | `VCC` | `+5V_AON` |
 
+### Power Up/Down Protocol
+
+The PMU is the always-on power-control island powered from `+5V_AON`. The IO
+Controller participates in shutdown through the two active-low backplane power
+control nets:
+
+| Signal | Direction | Protocol | Electrical idle |
+| --- | --- | --- | --- |
+| `/Backplane/~{PWR_OFF}` | To PMU | Level signal. `HIGH` means unasserted and requests/permits `KEEP POWER ON`; `LOW` means asserted and requests `REMOVE POWER`. | Pulled high by `R8` to `+5V_AON`. |
+| `/Backplane/~{SHUTDOWN_RQ}` | From PMU | Edge signal. The PMU uses the assertion edge to advise the IO Controller to clean up for shutdown. | Pulled high by `R7` to `+5V_AON`. |
+
+Shutdown sequence:
+
+1. During normal operation, `/Backplane/~{PWR_OFF}` remains high so the PMU
+   keeps power on.
+2. When the PMU wants an orderly shutdown, it signals the IO Controller on
+   `/Backplane/~{SHUTDOWN_RQ}` with an edge event.
+3. The IO Controller performs shutdown cleanup.
+4. When cleanup is complete, the IO Controller asserts `/Backplane/~{PWR_OFF}`
+   by driving it low.
+5. The PMU treats low `/Backplane/~{PWR_OFF}` as the level request to remove
+   power.
+
 ## pBITz Slot Bus
 
 `J2` through `J6` share the same electrical pinout. The connectors carry a

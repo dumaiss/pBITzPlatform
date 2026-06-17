@@ -38841,7 +38841,7 @@
 		)
 		(uuid "17fa4267-8979-4e69-8ea4-5456bd5aada7")
 	)
-	(label "SLK_CLK"
+	(label "SPI_CLK"
 		(at 175.26 57.15 0)
 		(effects
 			(font
@@ -38941,7 +38941,7 @@
 		)
 		(uuid "1d33d9fb-a689-4a04-b9c5-534dd8855473")
 	)
-	(label "SLK_CLK"
+	(label "SPI_CLK"
 		(at 478.79 57.15 0)
 		(effects
 			(font
@@ -39391,7 +39391,7 @@
 		)
 		(uuid "36d0ec0a-8275-4fef-a4fe-dfb040ad1f77")
 	)
-	(label "SLK_CLK"
+	(label "SPI_CLK"
 		(at 269.24 57.15 0)
 		(effects
 			(font
@@ -41231,7 +41231,7 @@
 		)
 		(uuid "9ade3efa-1f99-4468-9ffc-3e10c6549998")
 	)
-	(label "SLK_CLK"
+	(label "SPI_CLK"
 		(at 275.59 227.33 0)
 		(effects
 			(font
@@ -41531,7 +41531,7 @@
 		)
 		(uuid "ac42b378-db58-49f2-8dc9-bc28c9eb3ba8")
 	)
-	(label "SLK_CLK"
+	(label "SPI_CLK"
 		(at 372.11 57.15 0)
 		(effects
 			(font
@@ -41891,7 +41891,7 @@
 		)
 		(uuid "c31644a9-9156-435a-9ceb-202f6312f9be")
 	)
-	(label "SLK_CLK"
+	(label "SPI_CLK"
 		(at 72.39 58.42 0)
 		(effects
 			(font
