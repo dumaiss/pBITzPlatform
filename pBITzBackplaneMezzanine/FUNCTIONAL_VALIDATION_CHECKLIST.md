@@ -70,6 +70,7 @@ Validate rail presence and support connections, not current capacity.
 - [ ] Confirm `+3V3_INTERNAL` is used for FE1.1 support pull-ups and `U1.26/OVCJ`.
 - [ ] Confirm all IC ground pins, SD ground pins, connector shields, and J5 ground pins connect to `GND`.
 - [ ] Confirm `+5V`, `+3V3`, `+3V3_INTERNAL`, and `GND` are not shorted together in the schematic netlist.
+- [ ] Confirm every schematic symbol intended to create the `+3V3` net uses the actual `power:+3V3` symbol identity, not a relabeled `+5V` power symbol.
 
 Pass criteria: every required supply and ground pin is on the documented net,
 and rail names remain distinct except through intended component paths.
@@ -156,6 +157,7 @@ Validate unused 4050 channels do not float.
 - [ ] Confirm U3 unused outputs are intentionally unconnected.
 - [ ] Confirm U4 unused inputs are tied to `GND`.
 - [ ] Confirm U4 unused outputs are intentionally unconnected.
+- [ ] Confirm the exact U3/U4 device variant permits 5 V inputs while powered from `+3V3`; do not accept a generic buffer whose input absolute maximum is limited to `VCC + 0.3 V`.
 
 Pass criteria: no unused CMOS input is floating.
 
@@ -169,7 +171,8 @@ Validate that unconnected pins are intentional and limited to expected functions
 - [ ] Confirm unused FE1.1 pins are no-connected as documented in `ARCHITECTURE.md`.
 - [ ] Confirm unused MAX3421E GPIO/auxiliary pins are no-connected as documented in `ARCHITECTURE.md`.
 - [ ] Confirm unused 4050 outputs are no-connected.
-- [ ] Review MAX3421E `U2.22/VBCOMP`; if intentionally unused, record that decision, because the local MAX3421E datasheet recommends a bypass capacitor to ground.
+- [ ] Confirm MAX3421E `U2.22/VBCOMP` has an optional capacitor footprint directly to `GND`, with no series resistor.
+- [ ] Confirm the VBCOMP capacitor is `DNP` by default for host-mode use, and document `1 uF ceramic` as the optional populated value.
 
 Pass criteria: no functional connector, power, ground, USB 2.0, SPI, interrupt,
 or SD-card pin is unexpectedly open.
@@ -204,7 +207,30 @@ Pass criteria: no unresolved design-file issue remains that would obviously
 prevent the mezzanine from receiving power, communicating over SPI, operating
 the USB hub/controller path, or operating the SD-card path.
 
-## 12. Final Acceptance
+
+## 12. Cross-Board Electrical Compatibility
+
+Validate the mezzanine together with the backplane and IO Controller. This
+section catches voltage-domain and naming problems that cannot be seen by
+reviewing the mezzanine schematic alone.
+
+- [ ] Confirm J5 pad numbers and signal names agree with the matching backplane/mezzanine connector at the PCB-pad level, not only by schematic label.
+- [ ] Confirm `J5.13/~{SPI_INT}` is never pulled above the MAX3421E `VL` rail (`+3V3`).
+- [ ] If MAX3421E `INT` is configured open-drain, confirm there is exactly one effective pull-up to `+3V3`; no `+5V` pull-up may remain on the IO Controller or backplane.
+- [ ] Confirm the IO Controller input receiving `~{SPI_INT}` recognizes a 3.3 V high while the PIC runs from 5 V; document the required PIC input-threshold/`INLVL` configuration.
+- [ ] Confirm shared `MISO` has one intended idle pull-up to `+3V3` on the mezzanine.
+- [ ] Confirm any upstream `MISO` pull-up to `+5V` is DNP/removed so it cannot bias the 3.3 V bus above the peripheral supply.
+- [ ] Confirm both inactive SPI slaves (MAX3421E and SD card) release `MISO` when their chip selects are inactive.
+- [ ] Confirm physical chip-select mapping is documented end-to-end: `SPI_CS0` selects the SD card and `SPI_CS1` selects the MAX3421E.
+- [ ] Confirm IO Controller net names and firmware constants match that physical mapping; misleading names must be corrected or explicitly documented.
+- [ ] Confirm all host-driven 5 V SPI signals (`MOSI`, `SPI_CLK`, and both chip selects) pass through the 3.3 V translation buffers before reaching the MAX3421E or SD card.
+- [ ] Confirm no 3.3 V peripheral output is exposed to an external 5 V pull-up or actively driven 5 V source.
+
+Pass criteria: the complete IO Controller -> backplane -> mezzanine path has no
+5 V injection into 3.3 V device pins, no competing pull-ups across voltage
+domains, and the physical chip-select mapping is unambiguous.
+
+## 13. Final Acceptance
 
 - [ ] Schematic hierarchy matches the intended active design.
 - [ ] KiCad schematic netlist agrees with the architecture document.
@@ -218,6 +244,9 @@ the USB hub/controller path, or operating the SD-card path.
 - [ ] Intentional opens are limited to the documented list.
 - [ ] PCB pad-net agreement passes for key functional parts.
 - [ ] Gotcha review finds no unresolved obvious functional risk.
+- [ ] Cross-board voltage-domain and pull-up checks pass for `~{SPI_INT}` and shared `MISO`.
+- [ ] Physical `SPI_CS0`/`SPI_CS1` destination mapping agrees with upstream names and firmware documentation.
+- [ ] VBCOMP optional-capacitor population decision is recorded (`DNP` default; `1 uF` optional).
 
 Functional validation passes when every applicable item above is checked and
 all deviations are either corrected in the design or explicitly recorded as

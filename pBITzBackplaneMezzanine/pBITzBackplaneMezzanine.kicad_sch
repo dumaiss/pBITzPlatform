@@ -418,7 +418,7 @@
 			)
 		)
 		(pin "SPI_CS0" output
-			(at 149.86 123.19 90)
+			(at 144.78 123.19 90)
 			(uuid "e7ee768b-712a-4bad-857a-62f1adab7a11")
 			(effects
 				(font
@@ -428,7 +428,7 @@
 			)
 		)
 		(pin "SPI_CS1" output
-			(at 144.78 123.19 90)
+			(at 149.86 123.19 90)
 			(uuid "8850d25b-b618-4c3d-a149-0f46bb6f4099")
 			(effects
 				(font
