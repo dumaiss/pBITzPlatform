@@ -80,10 +80,6 @@
         [
           "lib_footprint_mismatch|308471400|216870000|f17856ec-5615-43a5-9f8a-607dad3fae54|00000000-0000-0000-0000-000000000000",
           ""
-        ],
-        [
-          "starved_thermal|193287215|235020215|19161a77-5cdb-4c35-8331-a3591474fb2a|29e5eae1-e94c-46d0-91af-b390fad7651b|In2.Cu",
-          ""
         ]
       ],
       "meta": {
@@ -853,7 +849,7 @@
         "uuid": "09491510-942e-431b-9079-5419d947115d"
       }
     ],
-    "used_designators": "",
+    "used_designators": "H14-26,RN5-10,#PWR13-18,#PWR21-22,#PWR29-34,#PWR40-41,#PWR50-56,#PWR73-81,J8-11",
     "variants": []
   },
   "sheets": [

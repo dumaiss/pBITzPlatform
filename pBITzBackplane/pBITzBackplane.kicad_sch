@@ -5,9 +5,13 @@
 	(uuid "09491510-942e-431b-9079-5419d947115d")
 	(paper "D")
 	(lib_symbols
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
@@ -15,7 +19,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -24,8 +28,8 @@
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -56,7 +60,7 @@
 					)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -78,7 +82,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -89,9 +93,9 @@
 					)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -99,6 +103,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -221,250 +245,270 @@
 		)
 	)
 	(junction
-		(at 24.13 127)
+		(at 135.89 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "09d5df7a-8c2e-44ec-902c-e98e6fdb4fc5")
+		(uuid "00b7a236-4f42-4800-8eb9-8fd00784f4c5")
 	)
 	(junction
-		(at 24.13 107.95)
+		(at 95.25 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "30b4f62d-f635-4fa2-8b52-0bb0f61c3846")
+		(uuid "1b578e79-a399-4ee2-8c68-0c009bf02a4e")
 	)
 	(junction
-		(at 55.88 137.16)
+		(at 95.25 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4579ac73-a625-41e1-912d-15da3a56c6cb")
+		(uuid "32679bce-1fc4-4ea5-999e-f60d3e56b502")
 	)
 	(junction
-		(at 24.13 120.65)
+		(at 135.89 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "47d9e567-7760-4b20-b784-a37c29460505")
+		(uuid "53972f3b-c7a9-485a-9484-47531e88ca21")
 	)
 	(junction
-		(at 55.88 114.3)
+		(at 135.89 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "49564728-8459-41dd-9cf9-b9069a41c9b3")
+		(uuid "5b8b7891-6efd-4f78-a7e5-f9f4ba58efcd")
 	)
 	(junction
-		(at 55.88 107.95)
+		(at 95.25 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "52ae3189-a79e-4bab-b3b4-006f3164d480")
+		(uuid "7ba0e7bf-247a-43af-8908-ba5d7700ab2b")
 	)
 	(junction
-		(at 24.13 114.3)
+		(at 135.89 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5cd4e728-d6b9-4332-991a-52115a3ade43")
+		(uuid "7c77b813-cb88-49eb-88cb-ced1586fe857")
 	)
 	(junction
-		(at 55.88 120.65)
+		(at 95.25 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "755b8452-f950-43bc-a350-e890019b97ea")
+		(uuid "a4be083d-986f-47f1-ad75-e7699dd4a4d1")
 	)
 	(junction
-		(at 55.88 143.51)
+		(at 135.89 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a74db3c9-4581-4404-9c02-559912f82094")
+		(uuid "b23295d1-8625-4d6e-881c-ba58719eb2ea")
 	)
 	(junction
-		(at 24.13 137.16)
+		(at 95.25 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ce5d47dd-c71d-4d46-ab29-71dea853a430")
+		(uuid "ce4ad518-0e1a-479b-a14d-c91e4a63c4c9")
 	)
 	(junction
-		(at 24.13 143.51)
+		(at 95.25 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dc8cfa00-e7e3-48b3-8054-de7d4a24a1f3")
+		(uuid "dbe55f13-a660-4d59-b52c-890dce990d46")
 	)
 	(wire
 		(pts
-			(xy 55.88 143.51) (xy 55.88 153.67)
+			(xy 135.89 137.16) (xy 140.97 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "02885649-26fc-4f5c-9fb1-845d68702b6d")
+		(uuid "311bdc42-6013-4469-8ccc-edbf07812627")
 	)
 	(wire
 		(pts
-			(xy 55.88 107.95) (xy 55.88 114.3)
+			(xy 100.33 127) (xy 95.25 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b1c0f6a-4bdf-43fb-bfef-e7dd9459d6e3")
+		(uuid "408d5ab7-a961-4fa1-9d28-5912fbe39849")
 	)
 	(wire
 		(pts
-			(xy 64.77 114.3) (xy 55.88 114.3)
+			(xy 95.25 107.95) (xy 100.33 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1ed244ce-160e-4492-98d3-a9cf9e69bd28")
+		(uuid "43b45365-0bfe-480d-9605-79fba959848e")
 	)
 	(wire
 		(pts
-			(xy 55.88 137.16) (xy 55.88 143.51)
+			(xy 95.25 114.3) (xy 95.25 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27969a84-3ef7-41a8-b347-26101cf4f037")
+		(uuid "4f5d0f63-bf2d-4c25-abbd-eb0a34fea28c")
 	)
 	(wire
 		(pts
-			(xy 55.88 120.65) (xy 64.77 120.65)
+			(xy 135.89 137.16) (xy 135.89 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "352094ee-df6c-4998-ba83-04d6e119fb32")
+		(uuid "56afe52e-1970-4db6-baf7-c8044cab55f8")
 	)
 	(wire
 		(pts
-			(xy 55.88 101.6) (xy 55.88 107.95)
+			(xy 135.89 143.51) (xy 135.89 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "44e8c51a-d7d7-4159-8c19-6fbd5031f189")
+		(uuid "6972a43f-b48a-4d86-ac69-e624de1ec2db")
 	)
 	(wire
 		(pts
-			(xy 24.13 143.51) (xy 24.13 153.67)
+			(xy 95.25 107.95) (xy 95.25 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "48c41a92-419c-4594-94c2-39b1ee5f358a")
+		(uuid "6a19bc72-9c98-436c-9d94-0e52ab135f45")
 	)
 	(wire
 		(pts
-			(xy 24.13 107.95) (xy 24.13 114.3)
+			(xy 95.25 120.65) (xy 100.33 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c3b9b53-12b5-4a56-91d1-c0cc4b69e96e")
+		(uuid "6e989f41-18eb-473d-ae01-ede281d7f994")
 	)
 	(wire
 		(pts
-			(xy 24.13 127) (xy 24.13 137.16)
+			(xy 135.89 107.95) (xy 135.89 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "518abae0-fa20-4bf0-a757-b3dfc6ad894f")
+		(uuid "73ad428e-3010-45f4-8a46-b3e2cb1bd901")
 	)
 	(wire
 		(pts
-			(xy 55.88 107.95) (xy 64.77 107.95)
+			(xy 139.7 101.6) (xy 135.89 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6a7a8773-a13d-41f5-8208-28c39bd04358")
+		(uuid "75b07a60-bb00-4b12-ab6a-c1aa8cf1fc5e")
 	)
 	(wire
 		(pts
-			(xy 24.13 137.16) (xy 24.13 143.51)
+			(xy 95.25 143.51) (xy 95.25 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c5a2f1d-170b-4ba6-9de1-df0ba6770ac3")
+		(uuid "7816af06-18a1-4d4c-8710-3cf25e9c8d85")
 	)
 	(wire
 		(pts
-			(xy 24.13 120.65) (xy 24.13 127)
+			(xy 100.33 101.6) (xy 95.25 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7f127e14-aa44-48fb-9afc-8ab4d784e8ba")
+		(uuid "795b9971-52ea-432e-8233-0a8f951459cd")
 	)
 	(wire
 		(pts
-			(xy 24.13 127) (xy 33.02 127)
+			(xy 95.25 114.3) (xy 100.33 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7fc8a6c7-b573-407b-9719-f0c9d94c9cbb")
+		(uuid "7b61c804-e1b2-48bc-8062-0216e205bb0f")
 	)
 	(wire
 		(pts
-			(xy 24.13 120.65) (xy 33.02 120.65)
+			(xy 135.89 114.3) (xy 135.89 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "830582b3-dfc9-4e66-a743-e81f5848f860")
+		(uuid "7d4ead5a-40c6-4e04-8698-7e235c5546c9")
 	)
 	(wire
 		(pts
-			(xy 24.13 107.95) (xy 33.02 107.95)
+			(xy 135.89 143.51) (xy 140.97 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89b8519f-3ac2-40d8-918a-24181f1307d9")
+		(uuid "89166fea-2c4c-4fd9-ab3e-f79214cec60d")
 	)
 	(wire
 		(pts
-			(xy 24.13 101.6) (xy 33.02 101.6)
+			(xy 95.25 120.65) (xy 95.25 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a9e4c9cc-5894-4b41-8a94-df769a0442fb")
+		(uuid "8c20c404-37ba-4128-9eba-2cb1a6d5d538")
 	)
 	(wire
 		(pts
-			(xy 24.13 137.16) (xy 33.02 137.16)
+			(xy 135.89 101.6) (xy 135.89 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "abf8d0a6-bb25-4f20-aedf-92613dc69b0f")
+		(uuid "8d1235cb-25f7-431b-9055-ea9564de5949")
 	)
 	(wire
 		(pts
-			(xy 55.88 120.65) (xy 55.88 137.16)
+			(xy 139.7 107.95) (xy 135.89 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af046c1c-23e6-48e5-8d28-905068a273ef")
+		(uuid "9277915b-3d3d-4114-b058-b991b1ec99ec")
+	)
+	(wire
+		(pts
+			(xy 95.25 127) (xy 95.25 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e59cf9c-efd0-4835-b70e-5505c64f25fc")
+	)
+	(wire
+		(pts
+			(xy 135.89 114.3) (xy 139.7 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ef012c-5936-4ba6-8e5f-ecd382bd66c3")
 	)
 	(wire
 		(pts
@@ -478,43 +522,33 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 143.51) (xy 33.02 143.51)
+			(xy 135.89 120.65) (xy 135.89 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be8e169b-3370-4bd7-8a0c-6eaab6bfa8dc")
+		(uuid "bb0855b9-9111-4d16-84dd-7f82599d10e1")
 	)
 	(wire
 		(pts
-			(xy 55.88 143.51) (xy 64.77 143.51)
+			(xy 95.25 101.6) (xy 95.25 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c1b744b2-874a-4ec9-b826-6b15492da096")
+		(uuid "d0c40361-88b5-413a-a597-33f93497c974")
 	)
 	(wire
 		(pts
-			(xy 55.88 137.16) (xy 64.77 137.16)
+			(xy 135.89 120.65) (xy 139.7 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4b9b94d-68cb-42f6-b732-ffac2cb5c843")
-	)
-	(wire
-		(pts
-			(xy 55.88 101.6) (xy 64.77 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2d49aad-0db5-4f0f-8124-46f00a872a5a")
+		(uuid "d9ff3eb7-dea9-49ce-acb3-eb41261a5584")
 	)
 	(wire
 		(pts
@@ -528,232 +562,37 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 101.6) (xy 24.13 107.95)
+			(xy 95.25 137.16) (xy 100.33 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dfa66f5c-7904-4c97-a166-f400a89fdbdb")
+		(uuid "e3439910-0445-4e26-86ae-a606e08c7d27")
 	)
 	(wire
 		(pts
-			(xy 24.13 114.3) (xy 24.13 120.65)
+			(xy 95.25 137.16) (xy 95.25 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e0f24b54-1316-4bfa-8d74-f18b92807482")
+		(uuid "f8d32e67-26bf-415e-b31c-779a88d3e2ff")
 	)
 	(wire
 		(pts
-			(xy 55.88 114.3) (xy 55.88 120.65)
+			(xy 95.25 143.51) (xy 100.33 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f8dbe818-ec67-4000-a13c-c52d67e25db5")
-	)
-	(wire
-		(pts
-			(xy 33.02 114.3) (xy 24.13 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff5ce190-77f0-4abd-a5ce-4e07bcd66405")
+		(uuid "fc86ff09-1824-4d5b-b9a7-26aa141486fd")
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 64.77 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "06e8f069-2de0-4097-9dc5-c9b459ba2060")
-		(property "Reference" "H13"
-			(at 67.31 142.2399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole (DB)"
-			(at 67.31 144.7799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 64.77 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 33.02 127 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 143.51 143.51 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -762,9 +601,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0de90eb2-3462-4595-83d1-25a7de564b8f")
-		(property "Reference" "H9"
-			(at 35.56 125.7299 0)
+		(uuid "011f6635-5d9f-44a4-a18e-804fca80d297")
+		(property "Reference" "H26"
+			(at 147.32 142.2399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -774,194 +613,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole (L)"
-			(at 35.56 128.2699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 33.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 33.02 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c7d0bc8-7a0f-46fd-95b0-270fa40518c6")
-		(property "Reference" "H3"
-			(at 35.56 106.6799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole (J)"
-			(at 35.56 109.2199 0)
+		(property "Value" "MountingHole_Pad (DB)"
+			(at 147.32 144.7799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -972,7 +625,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 33.02 107.95 0)
+			(at 143.51 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -983,7 +636,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 107.95 0)
+			(at 143.51 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -993,564 +646,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 33.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 33.02 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "44063172-aeed-47f8-962e-4d64d424f10e")
-		(property "Reference" "H10"
-			(at 35.56 135.8899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole (DB)"
-			(at 35.56 138.4299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 33.02 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 33.02 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "45601d9f-d4e1-41a4-8e97-b96452ba803d")
-		(property "Reference" "H5"
-			(at 35.56 113.0299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole (R)"
-			(at 35.56 115.5699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 33.02 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 55.88 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "796fb213-f292-44c7-89ea-b214ffce9e5c")
-		(property "Reference" "#PWR039"
-			(at 55.88 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 55.88 158.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 153.67 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 143.51 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1561,20 +658,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "a28f9d3b-e6e6-4a2c-91e7-f16182683805")
+			(uuid "7868f554-fe6f-4136-a104-c4093ac3ec58")
 		)
 		(instances
 			(project "pBITzBackplane"
 				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "#PWR039")
+					(reference "H26")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 64.77 107.95 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 102.87 137.16 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1583,9 +680,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7e31877a-329a-43bf-8bb8-069864851037")
-		(property "Reference" "H4"
-			(at 67.31 106.6799 0)
+		(uuid "01ceb8cc-e851-493d-9347-c792f5f74f88")
+		(property "Reference" "H19"
+			(at 106.68 135.8899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1595,8 +692,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole (S)"
-			(at 67.31 109.2199 0)
+		(property "Value" "MountingHole_Pad (DB)"
+			(at 106.68 138.4299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1607,7 +704,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 64.77 107.95 0)
+			(at 102.87 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1618,7 +715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 107.95 0)
+			(at 102.87 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1628,750 +725,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 64.77 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 64.77 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "875ee14e-3731-4a5a-ab8e-d4725d869525")
-		(property "Reference" "H11"
-			(at 67.31 135.8899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole (DB)"
-			(at 67.31 138.4299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 64.77 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 64.77 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96db59eb-ccb1-4696-98c4-7829aa31191e")
-		(property "Reference" "H2"
-			(at 67.31 100.3299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole (C)"
-			(at 67.31 102.8699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 64.77 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 33.02 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "afae11a2-3b6f-40c1-8da9-a288318f6562")
-		(property "Reference" "H7"
-			(at 35.56 119.3799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole (M)"
-			(at 35.56 121.9199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 33.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "pBITzBackplane"
-				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 24.13 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b16d9e1b-d6b2-4f66-abff-1abb460df815")
-		(property "Reference" "#PWR036"
-			(at 24.13 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 24.13 158.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 24.13 153.67 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 102.87 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2382,20 +737,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "1a11fe1c-8bcf-4a48-b0fa-03b735e7d56d")
+			(uuid "ef4fe8c6-aecd-48d2-8ac2-e458e8e392ba")
 		)
 		(instances
 			(project "pBITzBackplane"
 				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "#PWR036")
+					(reference "H19")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 64.77 120.65 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 102.87 107.95 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2404,9 +759,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cd962f5b-e3b4-480b-982d-c1790688dd13")
-		(property "Reference" "H8"
-			(at 67.31 119.3799 0)
+		(uuid "07d9bbcc-0f06-413a-96e5-5f59ce6f6cdf")
+		(property "Reference" "H15"
+			(at 106.68 106.6799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2416,8 +771,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole (H)"
-			(at 67.31 121.9199 0)
+		(property "Value" "MountingHole_Pad (J)"
+			(at 106.68 109.2199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2428,7 +783,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 64.77 120.65 0)
+			(at 102.87 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2439,7 +794,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 120.65 0)
+			(at 102.87 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2449,8 +804,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 64.77 120.65 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 102.87 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2460,128 +815,99 @@
 				)
 			)
 		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 64.77 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "1"
+			(uuid "36f47732-a16b-41ff-843c-386318effca9")
 		)
 		(instances
 			(project "pBITzBackplane"
 				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H8")
+					(reference "H15")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 64.77 114.3 0)
+		(lib_id "power:GND")
+		(at 135.89 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09f4f6bf-e333-4b35-a533-73e04f5528a2")
+		(property "Reference" "#PWR041"
+			(at 135.89 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9cced4d6-c630-471d-b376-35804f0185fb")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 142.24 114.3 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2590,9 +916,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "de44786b-4867-49e7-b879-e1824c2edc57")
-		(property "Reference" "H6"
-			(at 67.31 113.0299 0)
+		(uuid "1444d237-2197-4bc7-915c-21957419f49d")
+		(property "Reference" "H23"
+			(at 146.05 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2602,8 +928,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole (B)"
-			(at 67.31 115.5699 0)
+		(property "Value" "MountingHole_Pad (B)"
+			(at 146.05 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2614,7 +940,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 64.77 114.3 0)
+			(at 142.24 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2625,7 +951,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 114.3 0)
+			(at 142.24 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2635,8 +961,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 64.77 114.3 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 142.24 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2646,128 +972,21 @@
 				)
 			)
 		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 64.77 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "1"
+			(uuid "2e1c4697-af7b-4c7c-a410-7af1eb8110c1")
 		)
 		(instances
 			(project "pBITzBackplane"
 				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H6")
+					(reference "H23")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 33.02 101.6 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 142.24 120.65 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2775,9 +994,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ebb32e17-cdee-4826-a0a2-c001473895b5")
-		(property "Reference" "H1"
-			(at 35.56 100.3299 0)
+		(fields_autoplaced yes)
+		(uuid "23b16025-5a52-494f-9665-b833eb04b80e")
+		(property "Reference" "H24"
+			(at 146.05 119.3799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2787,8 +1007,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 35.56 102.8699 0)
+		(property "Value" "MountingHole_Pad (H)"
+			(at 146.05 121.9199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2799,7 +1019,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 33.02 101.6 0)
+			(at 142.24 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2810,7 +1030,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 101.6 0)
+			(at 142.24 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2820,8 +1040,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 33.02 101.6 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 142.24 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2831,128 +1051,21 @@
 				)
 			)
 		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 33.02 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "1"
+			(uuid "4e0a5f35-5f0c-4a77-be1d-030aff6efa17")
 		)
 		(instances
 			(project "pBITzBackplane"
 				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H1")
+					(reference "H24")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 33.02 143.51 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 102.87 120.65 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2960,9 +1073,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f822026f-756b-4ce1-8a20-ca5e5e810453")
-		(property "Reference" "H12"
-			(at 35.56 142.2399 0)
+		(fields_autoplaced yes)
+		(uuid "313688f8-d59a-4178-80d6-1b08691d9cd3")
+		(property "Reference" "H17"
+			(at 106.68 119.3799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2972,8 +1086,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole (DB)"
-			(at 35.56 144.7799 0)
+		(property "Value" "MountingHole_Pad (M)"
+			(at 106.68 121.9199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2984,7 +1098,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 33.02 143.51 0)
+			(at 102.87 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2995,7 +1109,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 143.51 0)
+			(at 102.87 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3005,8 +1119,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 33.02 143.51 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 102.87 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3016,120 +1130,644 @@
 				)
 			)
 		)
-		(property "KLC_S4.2_3V3OUT" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.2_VCC" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VENDOR" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CREATOR" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 33.02 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "1"
+			(uuid "3ccb11f1-00dd-4318-a23c-634838db807e")
 		)
 		(instances
 			(project "pBITzBackplane"
 				(path "/09491510-942e-431b-9079-5419d947115d"
-					(reference "H12")
+					(reference "H17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 143.51 137.16 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b88cd80-f8bb-4c7e-9352-178785f90b82")
+		(property "Reference" "H25"
+			(at 147.32 135.8899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad (DB)"
+			(at 147.32 138.4299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 143.51 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 143.51 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a65a65f-99ef-49df-a7af-a825eeea8e7b")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "H25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 102.87 101.6 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "568b5555-7371-4fbc-becc-9014c9a1ca21")
+		(property "Reference" "H14"
+			(at 106.68 100.3299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad (D)"
+			(at 106.68 102.8699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 102.87 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 102.87 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5cba0c80-c27e-4296-a7a7-518deef60776")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "H14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 102.87 143.51 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69795e82-5387-47fa-8b3a-88c09daeb51b")
+		(property "Reference" "H20"
+			(at 106.68 142.2399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad (DB)"
+			(at 106.68 144.7799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b15b1589-8274-48f2-9336-85d2cfb48188")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "H20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 102.87 114.3 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e61229b-e2ce-4ae8-bfcf-3930e16e1d2a")
+		(property "Reference" "H16"
+			(at 106.68 113.0299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad (R)"
+			(at 106.68 115.5699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 102.87 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 102.87 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24525fa4-53ea-46a3-8867-381b88bdcb9c")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "H16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a48b2475-4757-468b-9fda-0a6a096a8918")
+		(property "Reference" "#PWR040"
+			(at 95.25 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65e7182f-b61a-4b76-ada9-552d95b8bddb")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 102.87 127 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3b0d8ea-b40f-4b11-b972-44636b104656")
+		(property "Reference" "H18"
+			(at 106.68 125.7299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad (L)"
+			(at 106.68 128.2699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 102.87 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 102.87 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65224f5d-0f66-4075-85f6-65020e16ef3e")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "H18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 142.24 107.95 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbb91cf4-6f3a-48b1-a063-de33ffdc159a")
+		(property "Reference" "H22"
+			(at 146.05 106.6799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad (S)"
+			(at 146.05 109.2199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 142.24 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 142.24 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c77bebb8-94e4-4f6c-a3c8-38d9de9a1254")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "H22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 142.24 101.6 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef66a3cb-cb15-4883-8cb8-bf635c5dcc78")
+		(property "Reference" "H21"
+			(at 146.05 100.3299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad (C)"
+			(at 146.05 102.8699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 142.24 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 142.24 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8553b93c-00a3-4591-a21d-234ba3841d18")
+		)
+		(instances
+			(project "pBITzBackplane"
+				(path "/09491510-942e-431b-9079-5419d947115d"
+					(reference "H21")
 					(unit 1)
 				)
 			)
