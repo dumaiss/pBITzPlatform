@@ -236,6 +236,71 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15096566-3bb8-4050-b2f7-0235c5754096")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "4614X-101-472LF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f14b77e2-bce6-4433-bc5d-81c6e5ec58f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6359ba92-9b5c-449d-9110-5d259d4dcd8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ac05bca-9ce0-4765-8ab7-9a87d308cf01")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6db6c4c3-a748-464e-8a39-b20a069bf585")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R?Array?SIP*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/3d657b29-8bed-4a5d-a0e4-396de0fbf5ee")
 		(sheetname "/Backplane/")
@@ -529,6 +594,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd53c4a7-af5e-4e3d-ab81-3ae18c907fc1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23cceb56-a1cf-4db1-859a-1443f72114c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4f79c17-53a6-4acd-b8aa-cc4dd6620b75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa3e2510-afdd-431a-abac-a35327f08c6a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/07d9bbcc-0f06-413a-96e5-5f59ce6f6cdf")
 		(sheetname "/")
@@ -796,6 +913,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c1d0c1b9-059a-49b6-aab7-975e4d752f43")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c312d1b1-3aa8-449b-90c0-3036a7492f93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f676048-1766-418f-be54-fbd2f8915139")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a74f3ea-f6ec-40f7-9bb6-422641cb8b3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8537ddb0-8169-44e9-9a22-42c01c9d1958")
 			(effects
 				(font
 					(size 1 1)
@@ -1309,6 +1478,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b98a6f22-a551-46b0-8996-8b3333231feb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1233b4cd-56ff-4d43-8d53-9a2bd0859c96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71f682db-a823-493d-9e00-378cd80c235d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1decd95a-f069-4490-90cb-0f0ed61c6173")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35e033e3-8d49-4208-aed7-5c7d46107adc")
 			(effects
 				(font
 					(size 1 1)
@@ -2430,6 +2651,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7660ea51-261a-45a7-8afc-5f8a2a5e6959")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34799fa2-b3e7-47a2-9275-860f76890a22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8cd268e-2814-4467-8f9a-555dc3664bad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e642c47a-bf83-41a3-8e04-5e70d7735b45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/1c3623f2-5c61-4c3a-85ae-4751be33eb5f")
 		(sheetname "/Backplane/")
@@ -2573,6 +2846,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a731c6b3-35aa-4857-bd7e-dedddd242384")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "4614X-101-472LF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f74a260c-51f0-4176-a93d-6bc8979b733e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b651e8f0-447d-41ad-aad4-67697c92a275")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c4fb216-95dd-474f-9842-3185af2f53fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88236347-7f1d-40a1-b55d-eee4dcfe89e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2921,6 +3259,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3dc4c572-29b6-4174-bbc2-cda115ac1a19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ea6f87a-5550-40a1-b97c-7b95bd3180f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f5dcc73-916e-4da0-a643-35d79244df9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a537b00-f21d-4c2f-b7e6-cc7e2ab2c634")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/1341913b-78c7-4763-99ca-789ce5f0fe08/49b9a69d-2a9a-4c30-b808-8310e4399c8e")
 		(sheetname "/Power/")
@@ -3168,6 +3558,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8a41baf2-3594-4d22-ac98-42f227fca5fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cfd1f05a-1b82-4e59-baa3-ca776b29e52f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d9e6b62-3f99-4cfb-bd24-6d5b88be7b4d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "897fbcc2-e02a-4a03-81c5-165b19e64cb8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8e13b7f-8317-46b6-9f38-ace2e88b735d")
 			(effects
 				(font
 					(size 1 1)
@@ -4525,6 +4967,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89dd78f6-f944-45b0-8299-9337af56ae5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65fb66bb-e31e-419a-881b-50bb43ad39d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a07b4862-8dfb-4f28-903e-f609e6147b49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "751cb282-6d6c-46ac-bab7-e1cd09fac544")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/313688f8-d59a-4178-80d6-1b08691d9cd3")
 		(sheetname "/")
@@ -4790,6 +5284,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7f937d05-05b4-485e-bf87-65b2d248f51d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a481847-6ccf-4d8f-8a08-7f2180c05a02")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcf8c4cf-c4c5-425b-b8c9-78a25ed0b601")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "738cddec-fbac-439a-b772-ff88f92c6789")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c4bf504-b56b-40a8-b151-2d47402052b1")
 			(effects
 				(font
 					(size 1 1)
@@ -5081,6 +5627,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b6751242-f398-4868-8ea2-4f5b17ca7ba1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c53f3424-266b-4ff4-87d8-a42422fa805e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d024890-c0c9-456b-bac4-00ef32d7a3de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61e20367-bdd0-4818-891e-6041c1573da2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "860164ae-f178-45ac-bbda-c326a7fc496c")
 			(effects
 				(font
 					(size 1 1)
@@ -5437,6 +6035,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "195f42a2-402a-43dd-8a64-81780be161d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92456625-cc3f-4492-89cd-35c0cdf01f2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef585b1e-9d83-4bd0-914e-1bc0ab2e3a3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c9969b5-668f-4ba9-a04b-eef77b3e7837")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/724e7782-34fc-4bc7-a01e-7919c3586c58")
 		(sheetname "/Backplane/")
@@ -5580,6 +6230,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75eafbdf-801d-4020-89ac-8e3380b3c777")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9351b5c-b54f-40e2-a2e9-f3fa22d60c00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a9b09dd-34d8-446b-ab6b-29d6c5359025")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb7bea93-26fc-4a5b-b5d4-47090dd1550c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5850,6 +6552,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "43050702-8771-48c7-87e8-7ef3fe4c0b51")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "130a2fad-cc18-4cf0-b062-0d46e4cf8142")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "937b3dc4-c120-4683-a039-20cbd732966e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3de951ca-001c-4252-a396-2ed8180eb177")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bd365a8-f74a-4756-a8e7-ec8eafe53933")
 			(effects
 				(font
 					(size 1 1)
@@ -6228,6 +6982,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b22435d-b5f7-43f4-adcc-dfaf4ddd36ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cede48b1-33dd-4994-aae4-babd9d121c62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a77aea75-1063-4cc9-b8ba-0d5438c64be7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27b53e56-c12b-4c60-8f83-78b3639cbba8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1341913b-78c7-4763-99ca-789ce5f0fe08/2653c87c-6a49-46b4-a8d5-d1787fec3cb4")
 		(sheetname "/Power/")
@@ -6421,6 +7227,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "aa51667c-3961-4a1c-9702-0676ed9a0151")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49b40299-f650-4171-a800-14f405cb5f5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3dd85766-a79b-45d0-9c61-cae39b0f5483")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9caf06fd-24b5-4286-b89a-e0995675049f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d42de894-2190-4551-93a3-69a11b7bf411")
 			(effects
 				(font
 					(size 1 1)
@@ -7830,6 +8688,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "368ebd3d-8f2c-42e7-8624-bed2b49f2e41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73507bcb-86bb-4999-936d-d1a647b7f32f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b033673e-7703-4e0b-93c5-df346059ec40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12517b47-272f-4750-b061-e0a6e3087d3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/60c371c0-476d-4076-8623-623d0a79d1b3")
 		(sheetname "/Backplane/")
@@ -8023,6 +8933,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eb5ddd22-d918-4bca-be6b-c5cb2df08c19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09b01e5c-0230-44b6-9093-57dfcea17038")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0b17d6c-3605-4cdf-afa5-844d06e4cfc0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a29b43b8-1561-4f60-8f5e-62cd8d090716")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f987e72-94d8-4075-8230-50878e7a423a")
 			(effects
 				(font
 					(size 1 1)
@@ -9375,6 +10337,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d317d22-f366-449c-80ed-73d7ea760576")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "86093968114T55F1LF"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7943391a-ef95-463e-afea-31628c2e1e43")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be2aab0c-948b-4ef2-a82b-ebb169af2ccb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "829cd1ac-4699-49b7-bff1-2654c6eb78e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a89879ff-4bcc-48c3-9a7c-01d1a24bd8f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -10784,6 +11811,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "521900b4-5d18-4efc-8bde-2aef1eeca1bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "4614X-101-472LF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f883dfd0-abcf-42a9-afa0-dd3fd2c28be6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "adc71b62-1d01-4e05-b5fd-6313d3992bb1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d2d8c99-b44b-445f-926f-778948976167")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "651fcac9-7dab-47dc-a289-8831aefdde13")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -14753,6 +15845,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbda4316-d8cd-4f82-a6f6-771e05750091")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "588f2195-26df-4a51-9cd6-92a44da1b9d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "828aec6e-1cb5-4cd5-87d7-c24aa6a5919c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e44e7271-64f2-4a81-8917-7f15692f47df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/6783ff15-a32f-4946-9b63-124f54c60bc7")
 		(sheetname "/Backplane/")
@@ -15042,6 +16186,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34e7de08-bc38-4b38-9c11-b2e3437e3447")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d50238fa-1d65-4175-9778-9b181842088f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f3fc7667-2789-4d2b-9fec-67deed0de0c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7821b5a1-7e9e-4254-ad3f-4fa4964a7f41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1341913b-78c7-4763-99ca-789ce5f0fe08/f3b84fbc-884b-4946-b948-fa10e91b17e3")
 		(sheetname "/Power/")
@@ -15185,6 +16381,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16f37e25-a3e9-46aa-be21-8183741b537b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "4614X-101-472LF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bf2f7984-b2f0-4b71-9dd4-410543d598f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b572f03d-f4b7-45a0-85c1-a15e4734752e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1aa0d468-321f-424a-9aca-f0e9e0d9bc93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc3b17ed-0dd1-4363-9324-08cdb06f88f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -15481,6 +16742,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aebc702e-05b7-4434-b742-982ae577889d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c446e67-8343-4938-817e-e764b49565f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c7e59af-3d0f-440f-9bfa-f7d902cb4a75")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97d8f8cb-6bdd-400b-9f71-32420ade91f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/01ceb8cc-e851-493d-9347-c792f5f74f88")
 		(sheetname "/")
@@ -15753,6 +17066,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cf2199d-d86f-40e9-8955-66e293d7dfed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2c2164a-0d2f-451e-b2dc-09e904e0f5e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c09e7bb-ef09-40ca-b4c7-ed104a5d8038")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3837706-2e61-4e77-af33-8ad24b1a6c0d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1341913b-78c7-4763-99ca-789ce5f0fe08/e1596972-a65d-4593-a1f7-d83e65c5acf2")
 		(sheetname "/Power/")
@@ -15896,6 +17261,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2c43882-2da3-4fcb-bc0d-03e24809e71a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "4614X-101-472LF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0220ca5-fe07-4104-9991-70d06c393cdc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0536a10e-0cb8-4bfd-968f-8f218a12dd58")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39f36fc7-a907-415e-9c1c-7af418d1cd6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2de41596-b02d-4a95-bc0d-3197861b3234")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16239,6 +17669,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f26df6cc-cbd1-4575-ab4e-94ba9394905c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0e8e23a-6824-4bc3-9f9f-f373d35430cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a863918b-5c9d-4095-8880-ae9c1cd8c8ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c9a10cc-8445-41c1-a7ba-26d273c9f613")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f9b73f5-0be0-4e29-9cd9-476776d8e495")
 			(effects
 				(font
 					(size 1 1)
@@ -17648,6 +19130,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2be24681-8dd6-494d-bdc9-835ee3d3e3ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15a4c06b-74eb-4f11-8bce-b5007dffe4d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60b6eca2-5adb-4fcd-b410-b8bc2cdccd60")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "899dddc2-b39f-435f-929a-fe9c400c5d38")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/e56e18c8-ccff-49ca-9548-8ef03eb72d36")
 		(sheetname "/Backplane/")
@@ -17794,6 +19328,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c65c2d3b-3e46-4c25-8a71-0ea8d99484ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48183d58-603b-4911-b74b-3ed615f8514c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e678528-d1aa-4350-a277-b19f317b192c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4aee760a-3e3b-4599-89b9-72aaaf8deeba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/1444d237-2197-4bc7-915c-21957419f49d")
 		(sheetname "/")
@@ -17923,6 +19509,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "743cf5cc-2e86-48a8-be07-2d4274980fd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6156998-2398-4e07-b586-8788be04443d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0291813a-dc39-4a84-83ab-9d96654b1aec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75fde79d-eb85-442c-ac8d-7cea4909626f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/d3b0d8ea-b40f-4b11-b972-44636b104656")
 		(sheetname "/")
@@ -18049,6 +19687,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c28c712-d9a2-4c64-b2bd-29709e7baa9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81f6d25a-3a7c-4858-956f-10e602aeeebd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab69e5b0-27a2-4450-8535-d93a58db683e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68eb121b-7375-4854-8691-fe662de74686")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -18324,6 +20014,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24de2569-c748-408c-9116-33124dcb408d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c4a0958-ad67-403c-ba5a-e20fa0605adc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "159c39bb-6647-4299-962c-00584f01ec71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75c0ced6-7b6a-4cac-950e-6a9549ee212c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1341913b-78c7-4763-99ca-789ce5f0fe08/97f67cb7-5dc3-480c-9c00-e1b27d55ef46")
 		(sheetname "/Power/")
@@ -18522,6 +20264,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "264e1fbd-2809-4f3e-98e9-64b05dbca092")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9983636f-383e-4201-825d-e24a26804ae2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa6697c5-9720-41b9-92a4-7073ac159ea9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78706875-d3fb-4b8a-830c-312da323d58c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/0fc97942-7cde-44ed-99af-b64f882cae7c")
 		(sheetname "/Backplane/")
@@ -18665,6 +20459,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc0a1179-a55e-4a09-8549-a20be560a86e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69f4fa5b-f501-4d0b-a96a-4013e7fcf21b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31ced88a-3c9f-466a-b39f-0e0495478661")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95044c2e-0b69-41ec-8a8e-b73991d32af1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -18842,6 +20688,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "776f4c41-3c0a-46df-a10e-5d4d1df3903d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a333f5a-7ffb-4d7e-b316-f9fdab5210d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "512751a4-3189-400d-bf9c-879f831fb412")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "415be678-b19a-4b62-9913-66c570a32b5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7af5b17-ff16-4850-8677-90d09e685cf3")
 			(effects
 				(font
 					(size 1 1)
@@ -19481,6 +21379,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3160eda9-aacb-4c24-bd50-72ea0213a66f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9725ab3-b60e-4545-92cf-4d1aa568844f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e00e75d6-6317-48a1-9e99-661a5ddd6fc5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80274d80-b3d5-4e21-8832-b90d9ae91874")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/fb239dcd-2dda-4cd8-b3b0-84b67a134290")
 		(sheetname "/Backplane/")
@@ -19770,6 +21720,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e796fa34-54e1-44dc-aecb-893a2c9fb7f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98863f3a-36e2-4240-9e71-45045efc6587")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a46cabb7-208b-44ca-803f-9ad4e3bfcfcd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "833fd94a-da1b-47d1-87c7-a9d65b4d8179")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1341913b-78c7-4763-99ca-789ce5f0fe08/0afc01ab-3cc5-46cc-8e91-daf45f8654b7")
 		(sheetname "/Power/")
@@ -19961,6 +21963,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e7b5d554-3cf7-430a-8a46-f6bc551fcc62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "087ca3ff-762e-4dc6-80e9-ebe05223cd5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8d9b633-9901-4137-846c-90e147c6cf84")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85f84c3e-035a-4918-9cf0-ee4ed66824ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d441bca9-9224-4b0a-869f-18aaa2ca6f60")
 			(effects
 				(font
 					(size 1 1)
@@ -20166,6 +22220,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "496a79e1-993c-4e47-b839-81de0113b47d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1cb51408-d50a-46a7-a3b8-9d79dae2e17a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "498186a7-083a-4527-9f75-47b52ac89056")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9064faa3-9a17-49d6-a1dd-f02cd69f1a44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/12a16648-a8d5-4437-8417-fc9055018488")
 		(sheetname "/Backplane/")
@@ -20309,6 +22415,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f2511b8-284b-45fe-8bb9-9f4fa20beb03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "4614X-101-472LF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6aa2b1c-5ef7-4efe-aee0-0429f59480ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e165b5f-bc7d-4415-8f36-e1c1184f2c82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a96d178-3aee-4989-b4e8-d9be6703369c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cda5fd57-7048-4546-80b8-9c0ca4ddf761")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -20605,6 +22776,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a64c0133-3983-447e-83ba-d5a5ac675453")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab1bfcd5-ccae-4ff9-8cea-f9a9c63d2075")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73693be7-3f2c-4b54-8f3d-65f62da50ec2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f2f040b-d92f-48fb-b315-63717f649b41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/ef66a3cb-cb15-4883-8cb8-bf635c5dcc78")
 		(sheetname "/")
@@ -20877,6 +23100,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef8256ad-c983-4751-8901-3d05d6b6a27f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54d16fc6-ce46-4fc6-9bd8-9e1194f87299")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5eb6108-40e7-421b-99a9-e1e76d9033ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b246ec9d-9ce1-41bd-8bde-854a43b1a2c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1341913b-78c7-4763-99ca-789ce5f0fe08/4fe51613-88b0-4aa3-82e7-a5444622ce28")
 		(sheetname "/Power/")
@@ -21020,6 +23295,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92edd68e-9720-4498-b47f-f5370d8e4d87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c12a6a77-d35b-4040-a3e9-f626133286b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc0d8697-ce56-4ae2-89fd-23b819f4b018")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26113264-5be2-4ed2-a1b7-9d3962c99638")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -21199,6 +23526,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "47f5acc4-97e7-46a8-b2d0-1d87de3453c0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df660972-fffa-45fc-9cff-d1d68391b5a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da838709-a81c-4ca4-9d23-c3cc09ef6ca7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "babf2f32-3493-40a3-bfb7-abaf367f1af1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbc5491c-ed41-4d09-b922-13bd9b27149f")
 			(effects
 				(font
 					(size 1 1)
@@ -22621,6 +25000,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ee133f4-5cca-46d3-b372-0d6195c3d011")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac343b9b-643e-4bb4-9797-fb57f5f9a5d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af5a7996-c2d7-4a82-9983-f190a2665420")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6e458aa-b14b-4e2e-a54e-737766211918")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/1341913b-78c7-4763-99ca-789ce5f0fe08/15621943-fc3d-4660-a046-931e16868e5c")
 		(sheetname "/Power/")
@@ -22870,6 +25301,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a53ab62b-bf85-4281-a74a-c1954b6fde2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a49356f5-e757-4b97-ac70-7fbb61c73b51")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cc21209-8b8f-4015-8e99-4af94bf15f04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4a84fbf-ecec-48d4-9467-767761cdd1e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/9e61229b-e2ce-4ae8-bfcf-3930e16e1d2a")
 		(sheetname "/")
@@ -22994,6 +25477,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14767e0a-cc38-47a7-a8a0-378f37352796")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "86093968114T55F1LF"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53b7de3a-b63c-4305-9aef-133de9ca820f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a19a382e-967a-488d-aae5-548b9f6f2b05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d32fac89-6583-437c-8ec6-307fde2c329c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45e3cbe3-155c-402a-a0e4-ef9f2b5a71b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -24458,6 +27006,58 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63109d11-30aa-4ab9-863b-ee43b43ab1ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b238d57c-6ec3-4bcc-8012-d4bab72904be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95c3259b-0291-4e03-838c-82215236e0cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d52e102c-c8b3-4a6e-bd4d-67ed1a899c87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/80646092-42e8-4eba-b965-9419500af57b/b98ba536-b67d-4d5b-9d34-99264f178631")
 		(sheetname "/Backplane/")
@@ -24601,6 +27201,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "154b5268-038f-4dc6-b6a3-30ec29371d8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a944cef-2d78-4bb1-8624-cae21506593a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "753be0db-9533-4a17-b0a1-049491724fba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f78f8871-e456-41c5-a30d-dfa43384cd15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -24887,8 +27539,60 @@
 				)
 			)
 		)
+		(property "Height" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96b16d0e-2425-4178-a36e-fd5448bfbd23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0325dd2-2c01-4d9d-8384-3d3a3adb58d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8dbe640-327e-4633-82dd-a9b0c6c0715b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fd0d1b0-bf46-4145-bde9-9b66829220e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*PCIexpress*")
-		(path "/80646092-42e8-4eba-b965-9419500af57b/ea68555d-de3b-43bb-be33-0fc279ddaae1")
+		(path "/80646092-42e8-4eba-b965-9419500af57b/7908b658-29ef-4523-9acc-a6a6c98c66dc")
 		(sheetname "/Backplane/")
 		(sheetfile "Backplane.kicad_sch")
 		(units
@@ -26290,448 +28994,6 @@
 			)
 		)
 	)
-	(footprint "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen"
-		(layer "F.Cu")
-		(uuid "f3067e0c-cdfb-4c1f-9c1a-a070387c0d14")
-		(at 245.0704 396.341799)
-		(descr "Open Source Hardware Symbol")
-		(tags "Logo Symbol OSHW")
-		(property "Reference" "REF**"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d6d4b61c-cf84-4e36-88ad-ff60526f711a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "OSHW-Logo2_7.3x6mm_SilkScreen"
-			(at 0.75 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c56e4887-0976-4b54-800e-6332f638ae83")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c8e50904-a215-4548-a59d-8fcf146b07ae")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9251d799-f1c9-4259-81ee-c74c772eeb90")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_poly
-			(pts
-				(xy 2.6526 1.958752) (xy 2.669948 1.966334) (xy 2.711356 1.999128) (xy 2.746765 2.046547) (xy 2.768664 2.097151)
-				(xy 2.772229 2.122098) (xy 2.760279 2.156927) (xy 2.734067 2.175357) (xy 2.705964 2.186516) (xy 2.693095 2.188572)
-				(xy 2.686829 2.173649) (xy 2.674456 2.141175) (xy 2.669028 2.126502) (xy 2.63859 2.075744) (xy 2.59452 2.050427)
-				(xy 2.53801 2.051206) (xy 2.533825 2.052203) (xy 2.503655 2.066507) (xy 2.481476 2.094393) (xy 2.466327 2.139287)
-				(xy 2.45725 2.204615) (xy 2.453286 2.293804) (xy 2.452914 2.341261) (xy 2.45273 2.416071) (xy 2.451522 2.467069)
-				(xy 2.448309 2.499471) (xy 2.442109 2.518495) (xy 2.43194 2.529356) (xy 2.416819 2.537272) (xy 2.415946 2.53767)
-				(xy 2.386828 2.549981) (xy 2.372403 2.554514) (xy 2.370186 2.540809) (xy 2.368289 2.502925) (xy 2.366847 2.445715)
-				(xy 2.365998 2.374027) (xy 2.365829 2.321565) (xy 2.366692 2.220047) (xy 2.37007 2.143032) (xy 2.377142 2.086023)
-				(xy 2.389088 2.044526) (xy 2.40709 2.014043) (xy 2.432327 1.99008) (xy 2.457247 1.973355) (xy 2.517171 1.951097)
-				(xy 2.586911 1.946076) (xy 2.6526 1.958752)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "9a0447b7-ca69-46fc-a6db-b707a478e2b2")
-		)
-		(fp_poly
-			(pts
-				(xy -1.283907 1.92778) (xy -1.237328 1.954723) (xy -1.204943 1.981466) (xy -1.181258 2.009484) (xy -1.164941 2.043748)
-				(xy -1.154661 2.089227) (xy -1.149086 2.150892) (xy -1.146884 2.233711) (xy -1.146629 2.293246)
-				(xy -1.146629 2.512391) (xy -1.208314 2.540044) (xy -1.27 2.567697) (xy -1.277257 2.32767) (xy -1.280256 2.238028)
-				(xy -1.283402 2.172962) (xy -1.287299 2.128026) (xy -1.292553 2.09877) (xy -1.299769 2.080748) (xy -1.30955 2.069511)
-				(xy -1.312688 2.067079) (xy -1.360239 2.048083) (xy -1.408303 2.0556) (xy -1.436914 2.075543) (xy -1.448553 2.089675)
-				(xy -1.456609 2.10822) (xy -1.461729 2.136334) (xy -1.464559 2.179173) (xy -1.465744 2.241895) (xy -1.465943 2.307261)
-				(xy -1.465982 2.389268) (xy -1.467386 2.447316) (xy -1.472086 2.486465) (xy -1.482013 2.51178) (xy -1.499097 2.528323)
-				(xy -1.525268 2.541156) (xy -1.560225 2.554491) (xy -1.598404 2.569007) (xy -1.593859 2.311389)
-				(xy -1.592029 2.218519) (xy -1.589888 2.149889) (xy -1.586819 2.100711) (xy -1.582206 2.066198)
-				(xy -1.575432 2.041562) (xy -1.565881 2.022016) (xy -1.554366 2.00477) (xy -1.49881 1.94968) (xy -1.43102 1.917822)
-				(xy -1.357287 1.910191) (xy -1.283907 1.92778)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "45c2afe5-f231-49bf-9408-616c5b398eeb")
-		)
-		(fp_poly
-			(pts
-				(xy 0.529926 1.949755) (xy 0.595858 1.974084) (xy 0.649273 2.017117) (xy 0.670164 2.047409) (xy 0.692939 2.102994)
-				(xy 0.692466 2.143186) (xy 0.668562 2.170217) (xy 0.659717 2.174813) (xy 0.62153 2.189144) (xy 0.602028 2.185472)
-				(xy 0.595422 2.161407) (xy 0.595086 2.148114) (xy 0.582992 2.09921) (xy 0.551471 2.064999) (xy 0.507659 2.048476)
-				(xy 0.458695 2.052634) (xy 0.418894 2.074227) (xy 0.40545 2.086544) (xy 0.395921 2.101487) (xy 0.389485 2.124075)
-				(xy 0.385317 2.159328) (xy 0.382597 2.212266) (xy 0.380502 2.287907) (xy 0.37996 2.311857) (xy 0.377981 2.39379)
-				(xy 0.375731 2.451455) (xy 0.372357 2.489608) (xy 0.367006 2.513004) (xy 0.358824 2.526398) (xy 0.346959 2.534545)
-				(xy 0.339362 2.538144) (xy 0.307102 2.550452) (xy 0.288111 2.554514) (xy 0.281836 2.540948) (xy 0.278006 2.499934)
-				(xy 0.2766 2.430999) (xy 0.277598 2.333669) (xy 0.277908 2.318657) (xy 0.280101 2.229859) (xy 0.282693 2.165019)
-				(xy 0.286382 2.119067) (xy 0.291864 2.086935) (xy 0.299835 2.063553) (xy 0.310993 2.043852) (xy 0.31683 2.03541)
-				(xy 0.350296 1.998057) (xy 0.387727 1.969003) (xy 0.392309 1.966467) (xy 0.459426 1.946443) (xy 0.529926 1.949755)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "264ef929-7e7d-4525-b8f8-53553eaf5aa6")
-		)
-		(fp_poly
-			(pts
-				(xy -0.624114 1.851289) (xy -0.619861 1.910613) (xy -0.614975 1.945572) (xy -0.608205 1.96082) (xy -0.598298 1.961015)
-				(xy -0.595086 1.959195) (xy -0.552356 1.946015) (xy -0.496773 1.946785) (xy -0.440263 1.960333)
-				(xy -0.404918 1.977861) (xy -0.368679 2.005861) (xy -0.342187 2.037549) (xy -0.324001 2.077813)
-				(xy -0.312678 2.131543) (xy -0.306778 2.203626) (xy -0.304857 2.298951) (xy -0.304823 2.317237)
-				(xy -0.3048 2.522646) (xy -0.350509 2.53858) (xy -0.382973 2.54942) (xy -0.400785 2.554468) (xy -0.401309 2.554514)
-				(xy -0.403063 2.540828) (xy -0.404556 2.503076) (xy -0.405674 2.446224) (xy -0.406303 2.375234)
-				(xy -0.4064 2.332073) (xy -0.406602 2.246973) (xy -0.407642 2.185981) (xy -0.410169 2.144177) (xy -0.414836 2.116642)
-				(xy -0.422293 2.098456) (xy -0.433189 2.084698) (xy -0.439993 2.078073) (xy -0.486728 2.051375)
-				(xy -0.537728 2.049375) (xy -0.583999 2.071955) (xy -0.592556 2.080107) (xy -0.605107 2.095436)
-				(xy -0.613812 2.113618) (xy -0.619369 2.139909) (xy -0.622474 2.179562) (xy -0.623824 2.237832)
-				(xy -0.624114 2.318173) (xy -0.624114 2.522646) (xy -0.669823 2.53858) (xy -0.702287 2.54942) (xy -0.720099 2.554468)
-				(xy -0.720623 2.554514) (xy -0.721963 2.540623) (xy -0.723172 2.501439) (xy -0.724199 2.4407) (xy -0.724998 2.362141)
-				(xy -0.725519 2.269498) (xy -0.725714 2.166509) (xy -0.725714 1.769342) (xy -0.678543 1.749444)
-				(xy -0.631371 1.729547) (xy -0.624114 1.851289)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "2f9f7edc-836d-4965-b660-d03c1afdae46")
-		)
-		(fp_poly
-			(pts
-				(xy 1.779833 1.958663) (xy 1.782048 1.99685) (xy 1.783784 2.054886) (xy 1.784899 2.12818) (xy 1.785257 2.205055)
-				(xy 1.785257 2.465196) (xy 1.739326 2.511127) (xy 1.707675 2.539429) (xy 1.67989 2.550893) (xy 1.641915 2.550168)
-				(xy 1.62684 2.548321) (xy 1.579726 2.542948) (xy 1.540756 2.539869) (xy 1.531257 2.539585) (xy 1.499233 2.541445)
-				(xy 1.453432 2.546114) (xy 1.435674 2.548321) (xy 1.392057 2.551735) (xy 1.362745 2.54432) (xy 1.33368 2.521427)
-				(xy 1.323188 2.511127) (xy 1.277257 2.465196) (xy 1.277257 1.978602) (xy 1.314226 1.961758) (xy 1.346059 1.949282)
-				(xy 1.364683 1.944914) (xy 1.369458 1.958718) (xy 1.373921 1.997286) (xy 1.377775 2.056356) (xy 1.380722 2.131663)
-				(xy 1.382143 2.195286) (xy 1.386114 2.445657) (xy 1.420759 2.450556) (xy 1.452268 2.447131) (xy 1.467708 2.436041)
-				(xy 1.472023 2.415308) (xy 1.475708 2.371145) (xy 1.478469 2.309146) (xy 1.480012 2.234909) (xy 1.480235 2.196706)
-				(xy 1.480457 1.976783) (xy 1.526166 1.960849) (xy 1.558518 1.950015) (xy 1.576115 1.944962) (xy 1.576623 1.944914)
-				(xy 1.578388 1.958648) (xy 1.580329 1.99673) (xy 1.582282 2.054482) (xy 1.584084 2.127227) (xy 1.585343 2.195286)
-				(xy 1.589314 2.445657) (xy 1.6764 2.445657) (xy 1.680396 2.21724) (xy 1.684392 1.988822) (xy 1.726847 1.966868)
-				(xy 1.758192 1.951793) (xy 1.776744 1.944951) (xy 1.777279 1.944914) (xy 1.779833 1.958663)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "91375d4e-1341-4b44-8cf4-0b7dfa431f38")
-		)
-		(fp_poly
-			(pts
-				(xy -2.958885 1.921962) (xy -2.890855 1.957733) (xy -2.840649 2.015301) (xy -2.822815 2.052312)
-				(xy -2.808937 2.107882) (xy -2.801833 2.178096) (xy -2.80116 2.254727) (xy -2.806573 2.329552) (xy -2.81773 2.394342)
-				(xy -2.834286 2.440873) (xy -2.839374 2.448887) (xy -2.899645 2.508707) (xy -2.971231 2.544535)
-				(xy -3.048908 2.55502) (xy -3.127452 2.53881) (xy -3.149311 2.529092) (xy -3.191878 2.499143) (xy -3.229237 2.459433)
-				(xy -3.232768 2.454397) (xy -3.247119 2.430124) (xy -3.256606 2.404178) (xy -3.26221 2.370022) (xy -3.264914 2.321119)
-				(xy -3.265701 2.250935) (xy -3.265714 2.2352) (xy -3.265678 2.230192) (xy -3.120571 2.230192) (xy -3.119727 2.29643)
-				(xy -3.116404 2.340386) (xy -3.109417 2.368779) (xy -3.097584 2.388325) (xy -3.091543 2.394857)
-				(xy -3.056814 2.41968) (xy -3.023097 2.418548) (xy -2.989005 2.397016) (xy -2.968671 2.374029) (xy -2.956629 2.340478)
-				(xy -2.949866 2.287569) (xy -2.949402 2.281399) (xy -2.948248 2.185513) (xy -2.960312 2.114299)
-				(xy -2.98543 2.068194) (xy -3.02344 2.047635) (xy -3.037008 2.046514) (xy -3.072636 2.052152) (xy -3.097006 2.071686)
-				(xy -3.111907 2.109042) (xy -3.119125 2.16815) (xy -3.120571 2.230192) (xy -3.265678 2.230192) (xy -3.265174 2.160413)
-				(xy -3.262904 2.108159) (xy -3.257932 2.071949) (xy -3.249287 2.045299) (xy -3.235995 2.021722)
-				(xy -3.233057 2.017338) (xy -3.183687 1.958249) (xy -3.129891 1.923947) (xy -3.064398 1.910331)
-				(xy -3.042158 1.909665) (xy -2.958885 1.921962)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "d9a92366-d347-4d84-96b8-170812163cc3")
-		)
-		(fp_poly
-			(pts
-				(xy 3.153595 1.966966) (xy 3.211021 2.004497) (xy 3.238719 2.038096) (xy 3.260662 2.099064) (xy 3.262405 2.147308)
-				(xy 3.258457 2.211816) (xy 3.109686 2.276934) (xy 3.037349 2.310202) (xy 2.990084 2.336964) (xy 2.965507 2.360144)
-				(xy 2.961237 2.382667) (xy 2.974889 2.407455) (xy 2.989943 2.423886) (xy 3.033746 2.450235) (xy 3.081389 2.452081)
-				(xy 3.125145 2.431546) (xy 3.157289 2.390752) (xy 3.163038 2.376347) (xy 3.190576 2.331356) (xy 3.222258 2.312182)
-				(xy 3.265714 2.295779) (xy 3.265714 2.357966) (xy 3.261872 2.400283) (xy 3.246823 2.435969) (xy 3.21528 2.476943)
-				(xy 3.210592 2.482267) (xy 3.175506 2.51872) (xy 3.145347 2.538283) (xy 3.107615 2.547283) (xy 3.076335 2.55023)
-				(xy 3.020385 2.550965) (xy 2.980555 2.54166) (xy 2.955708 2.527846) (xy 2.916656 2.497467) (xy 2.889625 2.464613)
-				(xy 2.872517 2.423294) (xy 2.863238 2.367521) (xy 2.859693 2.291305) (xy 2.85941 2.252622) (xy 2.860372 2.206247)
-				(xy 2.948007 2.206247) (xy 2.949023 2.231126) (xy 2.951556 2.2352) (xy 2.968274 2.229665) (xy 3.004249 2.215017)
-				(xy 3.052331 2.19419) (xy 3.062386 2.189714) (xy 3.123152 2.158814) (xy 3.156632 2.131657) (xy 3.16399 2.10622)
-				(xy 3.146391 2.080481) (xy 3.131856 2.069109) (xy 3.07941 2.046364) (xy 3.030322 2.050122) (xy 2.989227 2.077884)
-				(xy 2.960758 2.127152) (xy 2.951631 2.166257) (xy 2.948007 2.206247) (xy 2.860372 2.206247) (xy 2.861285 2.162249)
-				(xy 2.868196 2.095384) (xy 2.881884 2.046695) (xy 2.904096 2.010849) (xy 2.936574 1.982513) (xy 2.950733 1.973355)
-				(xy 3.015053 1.949507) (xy 3.085473 1.948006) (xy 3.153595 1.966966)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "a0bea6ef-f966-4500-a158-69997adc8304")
-		)
-		(fp_poly
-			(pts
-				(xy 1.190117 2.065358) (xy 1.189933 2.173837) (xy 1.189219 2.257287) (xy 1.187675 2.319704) (xy 1.185001 2.365085)
-				(xy 1.180894 2.397429) (xy 1.175055 2.420733) (xy 1.167182 2.438995) (xy 1.161221 2.449418) (xy 1.111855 2.505945)
-				(xy 1.049264 2.541377) (xy 0.980013 2.55409) (xy 0.910668 2.542463) (xy 0.869375 2.521568) (xy 0.826025 2.485422)
-				(xy 0.796481 2.441276) (xy 0.778655 2.383462) (xy 0.770463 2.306313) (xy 0.769302 2.249714) (xy 0.769458 2.245647)
-				(xy 0.870857 2.245647) (xy 0.871476 2.31055) (xy 0.874314 2.353514) (xy 0.88084 2.381622) (xy 0.892523 2.401953)
-				(xy 0.906483 2.417288) (xy 0.953365 2.44689) (xy 1.003701 2.449419) (xy 1.051276 2.424705) (xy 1.054979 2.421356)
-				(xy 1.070783 2.403935) (xy 1.080693 2.383209) (xy 1.086058 2.352362) (xy 1.088228 2.304577) (xy 1.088571 2.251748)
-				(xy 1.087827 2.185381) (xy 1.084748 2.141106) (xy 1.078061 2.112009) (xy 1.066496 2.091173) (xy 1.057013 2.080107)
-				(xy 1.01296 2.052198) (xy 0.962224 2.048843) (xy 0.913796 2.070159) (xy 0.90445 2.078073) (xy 0.88854 2.095647)
-				(xy 0.87861 2.116587) (xy 0.873278 2.147782) (xy 0.871163 2.196122) (xy 0.870857 2.245647) (xy 0.769458 2.245647)
-				(xy 0.77281 2.158568) (xy 0.784726 2.090086) (xy 0.807135 2.0386) (xy 0.842124 1.998443) (xy 0.869375 1.977861)
-				(xy 0.918907 1.955625) (xy 0.976316 1.945304) (xy 1.029682 1.948067) (xy 1.059543 1.959212) (xy 1.071261 1.962383)
-				(xy 1.079037 1.950557) (xy 1.084465 1.918866) (xy 1.088571 1.870593) (xy 1.093067 1.816829) (xy 1.099313 1.784482)
-				(xy 1.110676 1.765985) (xy 1.130528 1.75377) (xy 1.143 1.748362) (xy 1.190171 1.728601) (xy 1.190117 2.065358)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "133473d4-d059-45be-90bd-d875a0c0496a")
-		)
-		(fp_poly
-			(pts
-				(xy -1.831697 1.931239) (xy -1.774473 1.969735) (xy -1.730251 2.025335) (xy -1.703833 2.096086)
-				(xy -1.69849 2.148162) (xy -1.699097 2.169893) (xy -1.704178 2.186531) (xy -1.718145 2.201437) (xy -1.745411 2.217973)
-				(xy -1.790388 2.239498) (xy -1.857489 2.269374) (xy -1.857829 2.269524) (xy -1.919593 2.297813)
-				(xy -1.970241 2.322933) (xy -2.004596 2.342179) (xy -2.017482 2.352848) (xy -2.017486 2.352934)
-				(xy -2.006128 2.376166) (xy -1.979569 2.401774) (xy -1.949077 2.420221) (xy -1.93363 2.423886) (xy -1.891485 2.411212)
-				(xy -1.855192 2.379471) (xy -1.837483 2.344572) (xy -1.820448 2.318845) (xy -1.787078 2.289546)
-				(xy -1.747851 2.264235) (xy -1.713244 2.250471) (xy -1.706007 2.249714) (xy -1.697861 2.26216) (xy -1.69737 2.293972)
-				(xy -1.703357 2.336866) (xy -1.714643 2.382558) (xy -1.73005 2.422761) (xy -1.730829 2.424322) (xy -1.777196 2.489062)
-				(xy -1.837289 2.533097) (xy -1.905535 2.554711) (xy -1.976362 2.552185) (xy -2.044196 2.523804)
-				(xy -2.047212 2.521808) (xy -2.100573 2.473448) (xy -2.13566 2.410352) (xy -2.155078 2.327387) (xy -2.157684 2.304078)
-				(xy -2.162299 2.194055) (xy -2.156767 2.142748) (xy -2.017486 2.142748) (xy -2.015676 2.174753)
-				(xy -2.005778 2.184093) (xy -1.981102 2.177105) (xy -1.942205 2.160587) (xy -1.898725 2.139881)
-				(xy -1.897644 2.139333) (xy -1.860791 2.119949) (xy -1.846 2.107013) (xy -1.849647 2.093451) (xy -1.865005 2.075632)
-				(xy -1.904077 2.049845) (xy -1.946154 2.04795) (xy -1.983897 2.066717) (xy -2.009966 2.102915) (xy -2.017486 2.142748)
-				(xy -2.156767 2.142748) (xy -2.152806 2.106027) (xy -2.12845 2.036212) (xy -2.094544 1.987302) (xy -2.033347 1.937878)
-				(xy -1.965937 1.913359) (xy -1.89712 1.911797) (xy -1.831697 1.931239)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "acc05249-d184-4a98-ad29-dbda997fbe2c")
-		)
-		(fp_poly
-			(pts
-				(xy 0.039744 1.950968) (xy 0.096616 1.972087) (xy 0.097267 1.972493) (xy 0.13244 1.99838) (xy 0.158407 2.028633)
-				(xy 0.17667 2.068058) (xy 0.188732 2.121462) (xy 0.196096 2.193651) (xy 0.200264 2.289432) (xy 0.200629 2.303078)
-				(xy 0.205876 2.508842) (xy 0.161716 2.531678) (xy 0.129763 2.54711) (xy 0.11047 2.554423) (xy 0.109578 2.554514)
-				(xy 0.106239 2.541022) (xy 0.103587 2.504626) (xy 0.101956 2.451452) (xy 0.1016 2.408393) (xy 0.101592 2.338641)
-				(xy 0.098403 2.294837) (xy 0.087288 2.273944) (xy 0.063501 2.272925) (xy 0.022296 2.288741) (xy -0.039914 2.317815)
-				(xy -0.085659 2.341963) (xy -0.109187 2.362913) (xy -0.116104 2.385747) (xy -0.116114 2.386877)
-				(xy -0.104701 2.426212) (xy -0.070908 2.447462) (xy -0.019191 2.450539) (xy 0.018061 2.450006) (xy 0.037703 2.460735)
-				(xy 0.049952 2.486505) (xy 0.057002 2.519337) (xy 0.046842 2.537966) (xy 0.043017 2.540632) (xy 0.007001 2.55134)
-				(xy -0.043434 2.552856) (xy -0.095374 2.545759) (xy -0.132178 2.532788) (xy -0.183062 2.489585)
-				(xy -0.211986 2.429446) (xy -0.217714 2.382462) (xy -0.213343 2.340082) (xy -0.197525 2.305488)
-				(xy -0.166203 2.274763) (xy -0.115322 2.24399) (xy -0.040824 2.209252) (xy -0.036286 2.207288) (xy 0.030821 2.176287)
-				(xy 0.072232 2.150862) (xy 0.089981 2.128014) (xy 0.086107 2.104745) (xy 0.062643 2.078056) (xy 0.055627 2.071914)
-				(xy 0.00863 2.0481) (xy -0.040067 2.049103) (xy -0.082478 2.072451) (xy -0.110616 2.115675) (xy -0.113231 2.12416)
-				(xy -0.138692 2.165308) (xy -0.170999 2.185128) (xy -0.217714 2.20477) (xy -0.217714 2.15395) (xy -0.203504 2.080082)
-				(xy -0.161325 2.012327) (xy -0.139376 1.989661) (xy -0.089483 1.960569) (xy -0.026033 1.9474) (xy 0.039744 1.950968)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "3b0af553-58d8-4f89-99a0-5fa0808351b6")
-		)
-		(fp_poly
-			(pts
-				(xy -2.400256 1.919918) (xy -2.344799 1.947568) (xy -2.295852 1.99848) (xy -2.282371 2.017338) (xy -2.267686 2.042015)
-				(xy -2.258158 2.068816) (xy -2.252707 2.104587) (xy -2.250253 2.156169) (xy -2.249714 2.224267)
-				(xy -2.252148 2.317588) (xy -2.260606 2.387657) (xy -2.276826 2.439931) (xy -2.302546 2.479869)
-				(xy -2.339503 2.512929) (xy -2.342218 2.514886) (xy -2.37864 2.534908) (xy -2.422498 2.544815) (xy -2.478276 2.547257)
-				(xy -2.568952 2.547257) (xy -2.56899 2.635283) (xy -2.569834 2.684308) (xy -2.574976 2.713065) (xy -2.588413 2.730311)
-				(xy -2.614142 2.744808) (xy -2.620321 2.747769) (xy -2.649236 2.761648) (xy -2.671624 2.770414)
-				(xy -2.688271 2.771171) (xy -2.699964 2.761023) (xy -2.70749 2.737073) (xy -2.711634 2.696426) (xy -2.713185 2.636186)
-				(xy -2.712929 2.553455) (xy -2.711651 2.445339) (xy -2.711252 2.413) (xy -2.709815 2.301524) (xy -2.708528 2.228603)
-				(xy -2.569029 2.228603) (xy -2.568245 2.290499) (xy -2.56476 2.330997) (xy -2.556876 2.357708) (xy -2.542895 2.378244)
-				(xy -2.533403 2.38826) (xy -2.494596 2.417567) (xy -2.460237 2.419952) (xy -2.424784 2.39575) (xy -2.423886 2.394857)
-				(xy -2.409461 2.376153) (xy -2.400687 2.350732) (xy -2.396261 2.311584) (xy -2.394882 2.251697)
-				(xy -2.394857 2.23843) (xy -2.398188 2.155901) (xy -2.409031 2.098691) (xy -2.42866 2.063766) (xy -2.45835 2.048094)
-				(xy -2.475509 2.046514) (xy -2.516234 2.053926) (xy -2.544168 2.07833) (xy -2.560983 2.12298) (xy -2.56835 2.19113)
-				(xy -2.569029 2.228603) (xy -2.708528 2.228603) (xy -2.708292 2.215245) (xy -2.706323 2.150333)
-				(xy -2.70355 2.102958) (xy -2.699612 2.06929) (xy -2.694151 2.045498) (xy -2.686808 2.027753) (xy -2.677223 2.012224)
-				(xy -2.673113 2.006381) (xy -2.618595 1.951185) (xy -2.549664 1.91989) (xy -2.469928 1.911165) (xy -2.400256 1.919918)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "cebb9c11-edb8-4362-9370-64d87ac09b2c")
-		)
-		(fp_poly
-			(pts
-				(xy 2.144876 1.956335) (xy 2.186667 1.975344) (xy 2.219469 1.998378) (xy 2.243503 2.024133) (xy 2.260097 2.057358)
-				(xy 2.270577 2.1028) (xy 2.276271 2.165207) (xy 2.278507 2.249327) (xy 2.278743 2.304721) (xy 2.278743 2.520826)
-				(xy 2.241774 2.53767) (xy 2.212656 2.549981) (xy 2.198231 2.554514) (xy 2.195472 2.541025) (xy 2.193282 2.504653)
-				(xy 2.191942 2.451542) (xy 2.191657 2.409372) (xy 2.190434 2.348447) (xy 2.187136 2.300115) (xy 2.182321 2.270518)
-				(xy 2.178496 2.264229) (xy 2.152783 2.270652) (xy 2.112418 2.287125) (xy 2.065679 2.309458) (xy 2.020845 2.333457)
-				(xy 1.986193 2.35493) (xy 1.970002 2.369685) (xy 1.969938 2.369845) (xy 1.97133 2.397152) (xy 1.983818 2.423219)
-				(xy 2.005743 2.444392) (xy 2.037743 2.451474) (xy 2.065092 2.450649) (xy 2.103826 2.450042) (xy 2.124158 2.459116)
-				(xy 2.136369 2.483092) (xy 2.137909 2.487613) (xy 2.143203 2.521806) (xy 2.129047 2.542568) (xy 2.092148 2.552462)
-				(xy 2.052289 2.554292) (xy 1.980562 2.540727) (xy 1.943432 2.521355) (xy 1.897576 2.475845) (xy 1.873256 2.419983)
-				(xy 1.871073 2.360957) (xy 1.891629 2.305953) (xy 1.922549 2.271486) (xy 1.95342 2.252189) (xy 2.001942 2.227759)
-				(xy 2.058485 2.202985) (xy 2.06791 2.199199) (xy 2.130019 2.171791) (xy 2.165822 2.147634) (xy 2.177337 2.123619)
-				(xy 2.16658 2.096635) (xy 2.148114 2.075543) (xy 2.104469 2.049572) (xy 2.056446 2.047624) (xy 2.012406 2.067637)
-				(xy 1.980709 2.107551) (xy 1.976549 2.117848) (xy 1.952327 2.155724) (xy 1.916965 2.183842) (xy 1.872343 2.206917)
-				(xy 1.872343 2.141485) (xy 1.874969 2.101506) (xy 1.88623 2.069997) (xy 1.911199 2.036378) (xy 1.935169 2.010484)
-				(xy 1.972441 1.973817) (xy 2.001401 1.954121) (xy 2.032505 1.94622) (xy 2.067713 1.944914) (xy 2.144876 1.956335)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "010a4593-c50a-47a0-9c0f-e56998ca4c95")
-		)
-		(fp_poly
-			(pts
-				(xy 0.10391 -2.757652) (xy 0.182454 -2.757222) (xy 0.239298 -2.756058) (xy 0.278105 -2.753793) (xy 0.302538 -2.75006)
-				(xy 0.316262 -2.744494) (xy 0.32294 -2.736727) (xy 0.326236 -2.726395) (xy 0.326556 -2.725057) (xy 0.331562 -2.700921)
-				(xy 0.340829 -2.653299) (xy 0.353392 -2.587259) (xy 0.368287 -2.507872) (xy 0.384551 -2.420204)
-				(xy 0.385119 -2.417125) (xy 0.40141 -2.331211) (xy 0.416652 -2.255304) (xy 0.429861 -2.193955) (xy 0.440054 -2.151718)
-				(xy 0.446248 -2.133145) (xy 0.446543 -2.132816) (xy 0.464788 -2.123747) (xy 0.502405 -2.108633)
-				(xy 0.551271 -2.090738) (xy 0.551543 -2.090642) (xy 0.613093 -2.067507) (xy 0.685657 -2.038035)
-				(xy 0.754057 -2.008403) (xy 0.757294 -2.006938) (xy 0.868702 -1.956374) (xy 1.115399 -2.12484) (xy 1.191077 -2.176197)
-				(xy 1.259631 -2.222111) (xy 1.317088 -2.25997) (xy 1.359476 -2.287163) (xy 1.382825 -2.301079) (xy 1.385042 -2.302111)
-				(xy 1.40201 -2.297516) (xy 1.433701 -2.275345) (xy 1.481352 -2.234553) (xy 1.546198 -2.174095) (xy 1.612397 -2.109773)
-				(xy 1.676214 -2.046388) (xy 1.733329 -1.988549) (xy 1.780305 -1.939825) (xy 1.813703 -1.90379) (xy 1.830085 -1.884016)
-				(xy 1.830694 -1.882998) (xy 1.832505 -1.869428) (xy 1.825683 -1.847267) (xy 1.80854 -1.813522) (xy 1.779393 -1.7652)
-				(xy 1.736555 -1.699308) (xy 1.679448 -1.614483) (xy 1.628766 -1.539823) (xy 1.583461 -1.47286) (xy 1.54615 -1.417484)
-				(xy 1.519452 -1.37758) (xy 1.505985 -1.357038) (xy 1.505137 -1.355644) (xy 1.506781 -1.335962) (xy 1.519245 -1.297707)
-				(xy 1.540048 -1.248111) (xy 1.547462 -1.232272) (xy 1.579814 -1.16171) (xy 1.614328 -1.081647) (xy 1.642365 -1.012371)
-				(xy 1.662568 -0.960955) (xy 1.678615 -0.921881) (xy 1.687888 -0.901459) (xy 1.689041 -0.899886)
-				(xy 1.706096 -0.897279) (xy 1.746298 -0.890137) (xy 1.804302 -0.879477) (xy 1.874763 -0.866315)
-				(xy 1.952335 -0.851667) (xy 2.031672 -0.836551) (xy 2.107431 -0.821982) (xy 2.174264 -0.808978)
-				(xy 2.226828 -0.798555) (xy 2.259776 -0.79173) (xy 2.267857 -0.789801) (xy 2.276205 -0.785038) (xy 2.282506 -0.774282)
-				(xy 2.287045 -0.753902) (xy 2.290104 -0.720266) (xy 2.291967 -0.669745) (xy 2.292918 -0.598708)
-				(xy 2.29324 -0.503524) (xy 2.293257 -0.464508) (xy 2.293257 -0.147201) (xy 2.217057 -0.132161) (xy 2.174663 -0.124005)
-				(xy 2.1114 -0.112101) (xy 2.034962 -0.097884) (xy 1.953043 -0.08279) (xy 1.9304 -0.078645) (xy 1.854806 -0.063947)
-				(xy 1.788953 -0.049495) (xy 1.738366 -0.036625) (xy 1.708574 -0.026678) (xy 1.703612 -0.023713)
-				(xy 1.691426 -0.002717) (xy 1.673953 0.037967) (xy 1.654577 0.090322) (xy 1.650734 0.1016) (xy 1.625339 0.171523)
-				(xy 1.593817 0.250418) (xy 1.562969 0.321266) (xy 1.562817 0.321595) (xy 1.511447 0.432733) (xy 1.680399 0.681253)
-				(xy 1.849352 0.929772) (xy 1.632429 1.147058) (xy 1.566819 1.211726) (xy 1.506979 1.268733) (xy 1.456267 1.315033)
-				(xy 1.418046 1.347584) (xy 1.395675 1.363343) (xy 1.392466 1.364343) (xy 1.373626 1.356469) (xy 1.33518 1.334578)
-				(xy 1.28133 1.301267) (xy 1.216276 1.259131) (xy 1.14594 1.211943) (xy 1.074555 1.16381) (xy 1.010908 1.121928)
-				(xy 0.959041 1.088871) (xy 0.922995 1.067218) (xy 0.906867 1.059543) (xy 0.887189 1.066037) (xy 0.849875 1.08315)
-				(xy 0.802621 1.107326) (xy 0.797612 1.110013) (xy 0.733977 1.141927) (xy 0.690341 1.157579) (xy 0.663202 1.157745)
-				(xy 0.649057 1.143204) (xy 0.648975 1.143) (xy 0.641905 1.125779) (xy 0.625042 1.084899) (xy 0.599695 1.023525)
-				(xy 0.567171 0.944819) (xy 0.528778 0.851947) (xy 0.485822 0.748072) (xy 0.444222 0.647502) (xy 0.398504 0.536516)
-				(xy 0.356526 0.433703) (xy 0.319548 0.342215) (xy 0.288827 0.265201) (xy 0.265622 0.205815) (xy 0.25119 0.167209)
-				(xy 0.246743 0.1528) (xy 0.257896 0.136272) (xy 0.287069 0.10993) (xy 0.325971 0.080887) (xy 0.436757 -0.010961)
-				(xy 0.523351 -0.116241) (xy 0.584716 -0.232734) (xy 0.619815 -0.358224) (xy 0.627608 -0.490493)
-				(xy 0.621943 -0.551543) (xy 0.591078 -0.678205) (xy 0.53792 -0.790059) (xy 0.465767 -0.885999) (xy 0.377917 -0.964924)
-				(xy 0.277665 -1.02573) (xy 0.16831 -1.067313) (xy 0.053147 -1.088572) (xy -0.064525 -1.088401) (xy -0.18141 -1.065699)
-				(xy -0.294211 -1.019362) (xy -0.399631 -0.948287) (xy -0.443632 -0.908089) (xy -0.528021 -0.804871)
-				(xy -0.586778 -0.692075) (xy -0.620296 -0.57299) (xy -0.628965 -0.450905) (xy -0.613177 -0.329107)
-				(xy -0.573322 -0.210884) (xy -0.509793 -0.099525) (xy -0.422979 0.001684) (xy -0.325971 0.080887)
-				(xy -0.285563 0.111162) (xy -0.257018 0.137219) (xy -0.246743 0.152825) (xy -0.252123 0.169843)
-				(xy -0.267425 0.2105) (xy -0.291388 0.271642) (xy -0.322756 0.350119) (xy -0.360268 0.44278) (xy -0.402667 0.546472)
-				(xy -0.444337 0.647526) (xy -0.49031 0.758607) (xy -0.532893 0.861541) (xy -0.570779 0.953165) (xy -0.60266 1.030316)
-				(xy -0.627229 1.089831) (xy -0.64318 1.128544) (xy -0.64909 1.143) (xy -0.663052 1.157685) (xy -0.69006 1.157642)
-				(xy -0.733587 1.142099) (xy -0.79711 1.110284) (xy -0.797612 1.110013) (xy -0.84544 1.085323) (xy -0.884103 1.067338)
-				(xy -0.905905 1.059614) (xy -0.906867 1.059543) (xy -0.923279 1.067378) (xy -0.959513 1.089165)
-				(xy -1.011526 1.122328) (xy -1.075275 1.164291) (xy -1.14594 1.211943) (xy -1.217884 1.260191) (xy -1.282726 1.302151)
-				(xy -1.336265 1.335227) (xy -1.374303 1.356821) (xy -1.392467 1.364343) (xy -1.409192 1.354457)
-				(xy -1.44282 1.326826) (xy -1.48999 1.284495) (xy -1.547342 1.230505) (xy -1.611516 1.167899) (xy -1.632503 1.146983)
-				(xy -1.849501 0.929623) (xy -1.684332 0.68722) (xy -1.634136 0.612781) (xy -1.590081 0.545972) (xy -1.554638 0.490665)
-				(xy -1.530281 0.450729) (xy -1.519478 0.430036) (xy -1.519162 0.428563) (xy -1.524857 0.409058)
-				(xy -1.540174 0.369822) (xy -1.562463 0.31743) (xy -1.578107 0.282355) (xy -1.607359 0.215201) (xy -1.634906 0.147358)
-				(xy -1.656263 0.090034) (xy -1.662065 0.072572) (xy -1.678548 0.025938) (xy -1.69466 -0.010095)
-				(xy -1.70351 -0.023713) (xy -1.72304 -0.032048) (xy -1.765666 -0.043863) (xy -1.825855 -0.057819)
-				(xy -1.898078 -0.072578) (xy -1.9304 -0.078645) (xy -2.012478 -0.093727) (xy -2.091205 -0.108331)
-				(xy -2.158891 -0.12102) (xy -2.20784 -0.130358) (xy -2.217057 -0.132161) (xy -2.293257 -0.147201)
-				(xy -2.293257 -0.464508) (xy -2.293086 -0.568846) (xy -2.292384 -0.647787) (xy -2.290866 -0.704962)
-				(xy -2.288251 -0.744001) (xy -2.284254 -0.768535) (xy -2.278591 -0.782195) (xy -2.27098 -0.788611)
-				(xy -2.267857 -0.789801) (xy -2.249022 -0.79402) (xy -2.207412 -0.802438) (xy -2.14837 -0.814039)
-				(xy -2.077243 -0.827805) (xy -1.999375 -0.84272) (xy -1.920113 -0.857768) (xy -1.844802 -0.871931)
-				(xy -1.778787 -0.884194) (xy -1.727413 -0.893539) (xy -1.696025 -0.89895) (xy -1.689041 -0.899886)
-				(xy -1.682715 -0.912404) (xy -1.66871 -0.945754) (xy -1.649645 -0.993623) (xy -1.642366 -1.012371)
-				(xy -1.613004 -1.084805) (xy -1.578429 -1.16483) (xy -1.547463 -1.232272) (xy -1.524677 -1.283841)
-				(xy -1.509518 -1.326215) (xy -1.504458 -1.352166) (xy -1.505264 -1.355644) (xy -1.515959 -1.372064)
-				(xy -1.54038 -1.408583) (xy -1.575905 -1.461313) (xy -1.619913 -1.526365) (xy -1.669783 -1.599849)
-				(xy -1.679644 -1.614355) (xy -1.737508 -1.700296) (xy -1.780044 -1.765739) (xy -1.808946 -1.813696)
-				(xy -1.82591 -1.84718) (xy -1.832633 -1.869205) (xy -1.83081 -1.882783) (xy -1.830764 -1.882869)
-				(xy -1.816414 -1.900703) (xy -1.784677 -1.935183) (xy -1.73899 -1.982732) (xy -1.682796 -2.039778)
-				(xy -1.619532 -2.102745) (xy -1.612398 -2.109773) (xy -1.53267 -2.18698) (xy -1.471143 -2.24367)
-				(xy -1.426579 -2.28089) (xy -1.397743 -2.299685) (xy -1.385042 -2.302111) (xy -1.366506 -2.291529)
-				(xy -1.328039 -2.267084) (xy -1.273614 -2.231388) (xy -1.207202 -2.187053) (xy -1.132775 -2.136689)
-				(xy -1.115399 -2.12484) (xy -0.868703 -1.956374) (xy -0.757294 -2.006938) (xy -0.689543 -2.036405)
-				(xy -0.616817 -2.066041) (xy -0.554297 -2.08967) (xy -0.551543 -2.090642) (xy -0.50264 -2.108543)
-				(xy -0.464943 -2.12368) (xy -0.446575 -2.13279) (xy -0.446544 -2.132816) (xy -0.440715 -2.149283)
-				(xy -0.430808 -2.189781) (xy -0.417805 -2.249758) (xy -0.402691 -2.32466) (xy -0.386448 -2.409936)
-				(xy -0.385119 -2.417125) (xy -0.368825 -2.504986) (xy -0.353867 -2.58474) (xy -0.341209 -2.651319)
-				(xy -0.331814 -2.699653) (xy -0.326646 -2.724675) (xy -0.326556 -2.725057) (xy -0.323411 -2.735701)
-				(xy -0.317296 -2.743738) (xy -0.304547 -2.749533) (xy -0.2815 -2.753453) (xy -0.244491 -2.755865)
-				(xy -0.189856 -2.757135) (xy -0.113933 -2.757629) (xy -0.013056 -2.757714) (xy 0 -2.757714) (xy 0.10391 -2.757652)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "fa22e690-212a-48c8-a155-b48296d2eb97")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
 		(layer "F.Cu")
 		(uuid "f3a21a83-6948-4f30-9f55-9f150cf6e910")
@@ -26779,6 +29041,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "114d1088-614d-4ca1-9f89-fc4d74f8b60e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86cf7d7c-7afa-4811-b6dc-bf4663010d8d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb8c3d23-04cd-47d2-bb55-85ce0a52b590")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b4e7e36-f4b5-47ea-aac4-dae1921da395")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -26906,6 +29220,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b6d1b0b-1b97-48bc-94a9-2881df89de19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "86093968114T55F1LF"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f009053-e7a7-4e61-9082-64512d413992")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68544f59-ceab-4656-b59b-b805d330c21e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b3b3142-af9e-4ec4-974f-a2009e9a80a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48ac7bc3-a06a-44a3-a2de-4c7769d3fbd9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -28313,6 +30692,71 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a218be5c-197f-4b13-b707-ff9a38676335")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "86093968114T55F1LF"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47e9ab28-e352-4ed7-aa14-1f6555fd6abd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "172e9c55-b7f8-4459-aae8-b7868f882574")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4b7c68e-3a41-4b9b-98f2-68087da6a166")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df3027c0-ae06-4363-97c9-ae6140a701a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -29772,6 +32216,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c57d3f11-4898-4856-92af-ea0c5bb45b17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6956c8bd-cdce-413f-b392-dbdde8ce07b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50f804cd-9523-4ad5-87ad-08ae47f3e40e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a13b113d-6b8f-4030-8ce8-49a5341beb21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5dff94a5-e10d-46af-ae60-ef5dfc886c4d")
 			(effects
 				(font
 					(size 1 1)
@@ -49502,10 +51998,10 @@
 		(uuid "a99f3ba7-e7dc-4dbd-a5a9-bad53f571fbd")
 	)
 	(zone
-		(net "+5V_AON")
+		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30000)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -49520,18 +52016,15 @@
 		)
 		(polygon
 			(pts
-				(xy 340.876965 386.582923) (xy 340.805123 386.654765) (xy 340.946004 387.017773) (xy 341.195304 386.973104)
-				(xy 341.239973 386.723804)
+				(xy 340.415357 380.379576) (xy 340.516957 380.379576) (xy 340.674024 380.023273) (xy 340.466157 379.878576)
+				(xy 340.25829 380.023273)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 340.884076 386.585683) (xy 341.030005 386.642317) (xy 341.230989 386.720317) (xy 341.237462 386.726505)
-				(xy 341.238273 386.733288) (xy 341.19674 386.965087) (xy 341.191907 386.972626) (xy 341.187287 386.97454)
-				(xy 340.955488 387.016073) (xy 340.94674 387.014159) (xy 340.942517 387.008789) (xy 340.929225 386.97454)
-				(xy 340.807883 386.661876) (xy 340.808084 386.652924) (xy 340.810514 386.649373) (xy 340.871571 386.588316)
-				(xy 340.879843 386.58489)
+				(xy 340.674024 380.023273) (xy 340.516957 380.379576) (xy 340.415357 380.379576) (xy 340.25829 380.023273)
+				(xy 340.466157 379.878576)
 			)
 		)
 	)
@@ -49569,39 +52062,6 @@
 		)
 	)
 	(zone
-		(net "+5V_AON")
-		(layer "F.Cu")
-		(hatch none 0.1)
-		(priority 30004)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 340.256312 393.3444) (xy 340.256312 393.2428) (xy 339.999286 393.1172) (xy 339.755312 393.2936)
-				(xy 339.7714 393.47)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 340.005586 393.120278) (xy 340.24975 393.239593) (xy 340.255677 393.246303) (xy 340.256312 393.250104)
-				(xy 340.256312 393.335344) (xy 340.252885 393.343617) (xy 340.247546 393.34667) (xy 339.784734 393.466546)
-				(xy 339.775866 393.465303) (xy 339.770474 393.458154) (xy 339.77015 393.456294) (xy 339.755917 393.300236)
-				(xy 339.758579 393.291686) (xy 339.760708 393.289698) (xy 339.993601 393.12131) (xy 340.00231 393.11924)
-			)
-		)
-	)
-	(zone
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
@@ -49633,10 +52093,10 @@
 		)
 	)
 	(zone
-		(net "GND")
+		(net "+5V_AON")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30003)
+		(priority 30000)
 		(attr
 			(teardrop
 				(type padvia)
@@ -49651,15 +52111,18 @@
 		)
 		(polygon
 			(pts
-				(xy 340.415357 380.379576) (xy 340.516957 380.379576) (xy 340.674024 380.023273) (xy 340.466157 379.878576)
-				(xy 340.25829 380.023273)
+				(xy 340.876965 386.582923) (xy 340.805123 386.654765) (xy 340.946004 387.017773) (xy 341.195304 386.973104)
+				(xy 341.239973 386.723804)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 340.674024 380.023273) (xy 340.516957 380.379576) (xy 340.415357 380.379576) (xy 340.25829 380.023273)
-				(xy 340.466157 379.878576)
+				(xy 340.884076 386.585683) (xy 341.030005 386.642317) (xy 341.230989 386.720317) (xy 341.237462 386.726505)
+				(xy 341.238273 386.733288) (xy 341.19674 386.965087) (xy 341.191907 386.972626) (xy 341.187287 386.97454)
+				(xy 340.955488 387.016073) (xy 340.94674 387.014159) (xy 340.942517 387.008789) (xy 340.929225 386.97454)
+				(xy 340.807883 386.661876) (xy 340.808084 386.652924) (xy 340.810514 386.649373) (xy 340.871571 386.588316)
+				(xy 340.879843 386.58489)
 			)
 		)
 	)
@@ -68573,39 +71036,6 @@
 		)
 	)
 	(zone
-		(net "+5V_AON")
-		(layer "In2.Cu")
-		(hatch none 0.1)
-		(priority 30003)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 339.8984 392.724804) (xy 339.6444 392.724804) (xy 339.526204 393.171227) (xy 339.7714 393.225804)
-				(xy 340.016596 393.171227)
-			)
-		)
-		(filled_polygon
-			(layer "In2.Cu")
-			(pts
-				(xy 339.897668 392.728231) (xy 339.900705 392.733509) (xy 340.013479 393.159456) (xy 340.012284 393.168331)
-				(xy 340.005164 393.173761) (xy 340.004711 393.173872) (xy 339.773942 393.225238) (xy 339.768858 393.225238)
-				(xy 339.538088 393.173872) (xy 339.530757 393.168729) (xy 339.529209 393.159909) (xy 339.529313 393.159482)
-				(xy 339.642095 392.733508) (xy 339.647525 392.726389) (xy 339.653405 392.724804) (xy 339.889395 392.724804)
-			)
-		)
-	)
-	(zone
 		(net "+5V")
 		(layer "In2.Cu")
 		(uuid "19161a77-5cdb-4c35-8331-a3591474fb2a")
@@ -80839,7 +83269,7 @@
 		(net "+5V_AON")
 		(layer "In2.Cu")
 		(hatch none 0.1)
-		(priority 30004)
+		(priority 30001)
 		(attr
 			(teardrop
 				(type padvia)
@@ -80854,83 +83284,18 @@
 		)
 		(polygon
 			(pts
-				(xy 340.266596 393.347) (xy 340.266596 393.093) (xy 339.820173 392.974804) (xy 339.765596 393.22)
-				(xy 339.820173 393.465196)
+				(xy 340.751241 387.229354) (xy 340.930846 387.408959) (xy 341.330093 387.176867) (xy 341.195304 386.964896)
+				(xy 340.983333 386.830107)
 			)
 		)
 		(filled_polygon
 			(layer "In2.Cu")
 			(pts
-				(xy 339.83193 392.977916) (xy 340.257891 393.090695) (xy 340.265011 393.096125) (xy 340.266596 393.102005)
-				(xy 340.266596 393.337994) (xy 340.263169 393.346267) (xy 340.257891 393.349304) (xy 339.831943 393.462079)
-				(xy 339.823068 393.460884) (xy 339.817638 393.453764) (xy 339.817533 393.453336) (xy 339.766161 393.222538)
-				(xy 339.766161 393.217461) (xy 339.817528 392.986686) (xy 339.82267 392.979357) (xy 339.83149 392.977809)
-			)
-		)
-	)
-	(zone
-		(net "+5V_AON")
-		(layer "In2.Cu")
-		(hatch none 0.1)
-		(priority 30000)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 341.631159 386.708646) (xy 341.451554 386.529041) (xy 341.052307 386.761133) (xy 341.187096 386.973104)
-				(xy 341.399067 387.107893)
-			)
-		)
-		(filled_polygon
-			(layer "In2.Cu")
-			(pts
-				(xy 341.457921 386.535408) (xy 341.624791 386.702278) (xy 341.628218 386.710551) (xy 341.626633 386.716431)
-				(xy 341.405186 387.097366) (xy 341.398066 387.102796) (xy 341.389191 387.101601) (xy 341.388793 387.101359)
-				(xy 341.189293 386.974501) (xy 341.185698 386.970906) (xy 341.05884 386.771406) (xy 341.057292 386.762586)
-				(xy 341.062435 386.755255) (xy 341.062796 386.755035) (xy 341.44377 386.533565) (xy 341.452643 386.532371)
-			)
-		)
-	)
-	(zone
-		(net "+5V_AON")
-		(layer "In2.Cu")
-		(hatch none 0.1)
-		(priority 30002)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 347.1094 395.414396) (xy 347.3634 395.414396) (xy 347.481596 394.967973) (xy 347.2364 394.913396)
-				(xy 346.991204 394.967973)
-			)
-		)
-		(filled_polygon
-			(layer "In2.Cu")
-			(pts
-				(xy 347.469712 394.965327) (xy 347.477042 394.97047) (xy 347.47859 394.97929) (xy 347.478479 394.979743)
-				(xy 347.365705 395.405691) (xy 347.360275 395.412811) (xy 347.354395 395.414396) (xy 347.118405 395.414396)
-				(xy 347.110132 395.410969) (xy 347.107095 395.405691) (xy 346.99432 394.979743) (xy 346.995515 394.970868)
-				(xy 347.002635 394.965438) (xy 347.003052 394.965335) (xy 347.233862 394.913961) (xy 347.238938 394.913961)
+				(xy 340.993208 386.836398) (xy 340.993606 386.83664) (xy 341.119783 386.916873) (xy 341.193106 386.963498)
+				(xy 341.196701 386.967093) (xy 341.323559 387.166593) (xy 341.325107 387.175413) (xy 341.319964 387.182744)
+				(xy 341.319566 387.182986) (xy 340.938631 387.404433) (xy 340.929756 387.405628) (xy 340.924478 387.402591)
+				(xy 340.757608 387.235721) (xy 340.754181 387.227448) (xy 340.755764 387.221571) (xy 340.977214 386.840631)
+				(xy 340.984333 386.835203)
 			)
 		)
 	)
@@ -80971,7 +83336,7 @@
 		(net "+5V_AON")
 		(layer "In2.Cu")
 		(hatch none 0.1)
-		(priority 30001)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -80986,18 +83351,116 @@
 		)
 		(polygon
 			(pts
-				(xy 340.751241 387.229354) (xy 340.930846 387.408959) (xy 341.330093 387.176867) (xy 341.195304 386.964896)
-				(xy 340.983333 386.830107)
+				(xy 339.8984 392.724804) (xy 339.6444 392.724804) (xy 339.526204 393.171227) (xy 339.7714 393.225804)
+				(xy 340.016596 393.171227)
 			)
 		)
 		(filled_polygon
 			(layer "In2.Cu")
 			(pts
-				(xy 340.993208 386.836398) (xy 340.993606 386.83664) (xy 341.119783 386.916873) (xy 341.193106 386.963498)
-				(xy 341.196701 386.967093) (xy 341.323559 387.166593) (xy 341.325107 387.175413) (xy 341.319964 387.182744)
-				(xy 341.319566 387.182986) (xy 340.938631 387.404433) (xy 340.929756 387.405628) (xy 340.924478 387.402591)
-				(xy 340.757608 387.235721) (xy 340.754181 387.227448) (xy 340.755764 387.221571) (xy 340.977214 386.840631)
-				(xy 340.984333 386.835203)
+				(xy 339.897668 392.728231) (xy 339.900705 392.733509) (xy 340.013479 393.159456) (xy 340.012284 393.168331)
+				(xy 340.005164 393.173761) (xy 340.004711 393.173872) (xy 339.773942 393.225238) (xy 339.768858 393.225238)
+				(xy 339.538088 393.173872) (xy 339.530757 393.168729) (xy 339.529209 393.159909) (xy 339.529313 393.159482)
+				(xy 339.642095 392.733508) (xy 339.647525 392.726389) (xy 339.653405 392.724804) (xy 339.889395 392.724804)
+			)
+		)
+	)
+	(zone
+		(net "+5V_AON")
+		(layer "In2.Cu")
+		(hatch none 0.1)
+		(priority 30002)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 347.1094 395.414396) (xy 347.3634 395.414396) (xy 347.481596 394.967973) (xy 347.2364 394.913396)
+				(xy 346.991204 394.967973)
+			)
+		)
+		(filled_polygon
+			(layer "In2.Cu")
+			(pts
+				(xy 347.469712 394.965327) (xy 347.477042 394.97047) (xy 347.47859 394.97929) (xy 347.478479 394.979743)
+				(xy 347.365705 395.405691) (xy 347.360275 395.412811) (xy 347.354395 395.414396) (xy 347.118405 395.414396)
+				(xy 347.110132 395.410969) (xy 347.107095 395.405691) (xy 346.99432 394.979743) (xy 346.995515 394.970868)
+				(xy 347.002635 394.965438) (xy 347.003052 394.965335) (xy 347.233862 394.913961) (xy 347.238938 394.913961)
+			)
+		)
+	)
+	(zone
+		(net "+5V_AON")
+		(layer "In2.Cu")
+		(hatch none 0.1)
+		(priority 30000)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 341.631159 386.708646) (xy 341.451554 386.529041) (xy 341.052307 386.761133) (xy 341.187096 386.973104)
+				(xy 341.399067 387.107893)
+			)
+		)
+		(filled_polygon
+			(layer "In2.Cu")
+			(pts
+				(xy 341.457921 386.535408) (xy 341.624791 386.702278) (xy 341.628218 386.710551) (xy 341.626633 386.716431)
+				(xy 341.405186 387.097366) (xy 341.398066 387.102796) (xy 341.389191 387.101601) (xy 341.388793 387.101359)
+				(xy 341.189293 386.974501) (xy 341.185698 386.970906) (xy 341.05884 386.771406) (xy 341.057292 386.762586)
+				(xy 341.062435 386.755255) (xy 341.062796 386.755035) (xy 341.44377 386.533565) (xy 341.452643 386.532371)
+			)
+		)
+	)
+	(zone
+		(net "+5V_AON")
+		(layer "In2.Cu")
+		(hatch none 0.1)
+		(priority 30004)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 340.266596 393.347) (xy 340.266596 393.093) (xy 339.820173 392.974804) (xy 339.765596 393.22)
+				(xy 339.820173 393.465196)
+			)
+		)
+		(filled_polygon
+			(layer "In2.Cu")
+			(pts
+				(xy 339.83193 392.977916) (xy 340.257891 393.090695) (xy 340.265011 393.096125) (xy 340.266596 393.102005)
+				(xy 340.266596 393.337994) (xy 340.263169 393.346267) (xy 340.257891 393.349304) (xy 339.831943 393.462079)
+				(xy 339.823068 393.460884) (xy 339.817638 393.453764) (xy 339.817533 393.453336) (xy 339.766161 393.222538)
+				(xy 339.766161 393.217461) (xy 339.817528 392.986686) (xy 339.82267 392.979357) (xy 339.83149 392.977809)
 			)
 		)
 	)
