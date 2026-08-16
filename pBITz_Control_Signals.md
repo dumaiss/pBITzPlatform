@@ -132,7 +132,7 @@ The encoding is:
 
 | `CS[3:0]` | Meaning |
 | --- | --- |
-| `0000` | No pBITz device selected |
+| `0000` | No pBITz device selected; reserved and invalid as a card address |
 | `0001`–`1111` | Device address 1–15 selected |
 
 Thus pBITz supports up to **15 normal device addresses** through this first-stage decode.
@@ -143,7 +143,9 @@ On an expansion card, the usual implementation is:
 2. generate a local card-select signal when the values match; and
 3. use the ordinary address lines for any required register, port, memory-window, or sub-device decoding within that card.
 
-The device address is commonly configured with a small DIP switch, rotary hexadecimal/BCD-style switch, jumper field, or equivalent configuration mechanism. A card should not claim device address `0000`; treating a configured value of zero as **disabled** is a useful implementation convention.
+The device address is commonly configured with a small DIP switch, rotary hexadecimal/BCD-style switch, jumper field, or equivalent configuration mechanism. **Device address `0000` must never be assigned to a card.** It is the actively driven "no pBITz device selected" value, not a disabled or tri-stated condition.
+
+This distinction is important because `CS[3:0]` is driven push-pull by the CPU-side decode logic. During cycles that are not valid pBITz peripheral accesses—including ordinary memory cycles—the decode logic drives `CS[3:0] = 0000`. A card configured to compare equal to device address zero would therefore falsely select itself on those cycles.
 
 Conceptually:
 
@@ -159,7 +161,7 @@ CPU address/MMU decode
 
 This mechanism is deliberately independent of the CPU's native I/O model. A Z80 can derive it from an `/IORQ` decode, a 6809/68k system can derive it from a memory-mapped I/O aperture, and an MCU can derive it from an external-memory-controller region. In each case, the expansion card sees the same device number.
 
-The CPU-side decoder should drive `CS[3:0] = 0000` whenever no pBITz peripheral is selected. A non-zero device address therefore represents an explicit first-stage selection rather than requiring every card to decode the full system address map itself.
+The CPU-side decoder must drive `CS[3:0] = 0000` whenever no pBITz peripheral is selected. A non-zero device address therefore represents an explicit first-stage selection rather than requiring every card to decode the full system address map itself.
 
 `CTRL_19` (`/CS_CART`) is a separate optional dedicated cartridge/boot-ROM select and is **not** device address 15 or otherwise part of the `CS[3:0]` namespace.
 
@@ -318,7 +320,7 @@ The following informal profiles help card designers decide how portable a design
 
 Uses `CS[3:0]` device selection, `CTRL_0`, `CTRL_1`, and `CTRL_2`, plus address/data lines.
 
-The card compares `CS[3:0]` against its configured device address and uses only the address bits needed for its own internal register or memory map.
+The card compares `CS[3:0]` against its configured device address and uses only the address bits needed for its own internal register or memory map. Valid configured device addresses are `0001` through `1111`; `0000` is reserved for "no device selected" and must not be used by a card.
 
 Optional use of `CTRL_12` and `CTRL_14` is still considered highly portable.
 
