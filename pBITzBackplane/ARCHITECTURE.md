@@ -1,299 +1,350 @@
-# pBITzBackplane Architecture
+# pBITz Backplane Architecture
 
-This document describes the active `pBITzBackplane` KiCad project as checked
-out in this repository. The source of truth for connectivity is the schematic
-hierarchy rooted at `pBITzBackplane.kicad_sch`, with the generated KiCad
-schematic netlist used to resolve cases where `kicad_nettrace.py` misses a
-connection. If the schematic and `kicad_nettrace.py` disagree, the schematic
-wins.
+This document describes the current architecture and physical signal distribution of the `pBITzBackplane` KiCad project.
 
-## Scope And Sources
+The source of truth for connectivity is the schematic hierarchy rooted at [`pBITzBackplane.kicad_sch`](pBITzBackplane.kicad_sch). This document explains that design in human-readable form; if this document and the current KiCad sources disagree, the **KiCad schematic wins**.
 
-Active schematic hierarchy:
+The logical meaning of the portable `CTRL_*` and `CS[3:0]` conventions is documented separately in [`../pBITz_Control_Signals.md`](../pBITz_Control_Signals.md). This file is intentionally the place where the **physical backplane connectors and their pin mappings** are documented.
+
+---
+
+## 1. Schematic hierarchy
+
+The active design is divided into three sheets:
 
 | Sheet | File | Role |
 | --- | --- | --- |
-| Root | `pBITzBackplane.kicad_sch` | Board-level mounting holes and hierarchical sheet instances. |
-| Power | `Power.kicad_sch` | ATX connector, standby-powered ATtiny controller, power button, LEDs, and ATX `PS_ON#` control. |
-| Backplane | `Backplane.kicad_sch` | pBITz slot connectors, service IDC header, bus pull-up resistor networks, and slot rail decoupling. |
+| Root | `pBITzBackplane.kicad_sch` | Top-level hierarchy and board-level interconnect. |
+| Power | `Power.kicad_sch` | ATX input, standby-powered PMU, power switch, indicators, and `PS_ON#` control. |
+| Backplane | `Backplane.kicad_sch` | DIN expansion connectors, cartridge connector, service header, bus pull-ups, and slot decoupling. |
 
-Trace commands used:
+The backplane is deliberately simple. Apart from the power-management island it is primarily a passive distribution board; CPU-specific decode, timing adaptation, and bus semantics live on the CPU board or its associated glue logic.
 
-```sh
-python3 Code/tools/kicad_nettrace.py /home/kitamura/Documents/pBITzPlatform/pBITzBackplane/pBITzBackplane.kicad_sch
-python3 Code/tools/kicad_nettrace.py /home/kitamura/Documents/pBITzPlatform/pBITzBackplane/pBITzBackplane.kicad_sch --list-nets
-python3 Code/tools/kicad_nettrace.py /home/kitamura/Documents/pBITzPlatform/pBITzBackplane/pBITzBackplane.kicad_sch --check
-HOME=/tmp XDG_CONFIG_HOME=/tmp XDG_DATA_HOME=/tmp kicad-cli sch export netlist -o /tmp/pbitzbackplane-kicad.net pBITzBackplane/pBITzBackplane.kicad_sch
-```
+---
 
-`kicad_nettrace.py` reported:
+## 2. Physical connector architecture
 
-| Sheet | Pin hits | Coverage |
-| --- | ---: | ---: |
-| Root | 2/2 | 100% |
-| Power | 75/79 | 95% |
-| Backplane | 613/616 | 100% |
+The current backplane has **two different expansion connector types** serving different mechanical roles:
 
-The tracer found 141 nets and 671 placed pins, with no output-driver conflicts.
-Its `--check` output was useful for finding opens, but it also reports some
-false opens where the schematic netlist resolves global power nets,
-resistor-network common pins, J7 power pins, and repeated hierarchical labels.
-The KiCad schematic netlist was therefore used for the final connectivity
-tables.
+| Ref | Role | Connector | Notes |
+| --- | --- | --- | --- |
+| `J8` | pBITz expansion slot | DIN 41612, 96-position | Amphenol `86093968114T55F1LF`; right-angle backplane connector. |
+| `J9` | pBITz expansion slot | DIN 41612, 96-position | Same electrical pinout as J8. |
+| `J10` | pBITz expansion slot | DIN 41612, 96-position | Same electrical pinout as J8. |
+| `J11` | pBITz expansion slot | DIN 41612, 96-position | Same electrical pinout as J8. |
+| `J6` | Cartridge slot | PCIe x8-style, 98-contact | Samtec `PCIE-098-02-X-D-RA`; right-angle connector. **Mechanical connector only: this is not PCI Express.** |
+| `J7` | Platform service header | 2x10 IDC | Exposes power and the SPI/service interface to the backplane mezzanine. |
 
-## Board Overview
+The four ordinary expansion positions therefore use the DIN connector introduced with the current pBITz mechanical architecture, while the cartridge slot deliberately retains the compact right-angle PCIe x8 connector.
 
-The backplane is a mostly passive expansion board. It distributes address,
-data, control, SPI/service, clock, power, and ground nets across five pBITz bus
-connectors. The only active logic is the power-control island around the
-ATtiny85 and BSS138 MOSFET in the `Power` sheet.
+### Important: the cartridge connector is not PCI Express
 
-Physical PCB facts from `pBITzBackplane.kicad_pcb`:
+`J6` uses a connector mechanically associated with PCI Express, but its electrical interface is the **pBITz parallel bus**. A PCI Express card must never be connected to it, and a pBITz cartridge must never be inserted into a PC PCIe slot.
 
-| Item | Value |
-| --- | --- |
-| KiCad PCB version | 10.0 format |
-| Copper stack | 4 layers: `F.Cu`, `In1.Cu`, `In2.Cu`, `B.Cu` |
-| Board outline | 243.84 mm x 243.84 mm square |
-| Footprints | 54 placed footprints |
-| Main power input | `J1`, ATX-24, footprint `Footprints:MOLEX_39281243` |
-| pBITz slots | `J2` through `J6`, 98-pin pBITz bus connectors |
-| Service header | `J7`, 2x10 IDC, footprint `Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical` |
+The cartridge connector is now part of the **main backplane**, not the USB/SD mezzanine. It receives the same current pBITz bus presented to the DIN expansion slots, including the general clock lines.
 
-Slot connector footprints:
+---
 
-| Ref | Value | Footprint |
+## 3. pBITz bus carried by the backplane
+
+The current backplane distributes the following logical groups:
+
+| Group | Signals | Notes |
 | --- | --- | --- |
-| `J2` | `pBITzBus` | `Footprints:AMPHENOL_10018783-10202TLF` |
-| `J3` | `pBITzBus` | `Footprints:AMPHENOL_10018783-10202TLF` |
-| `J4` | `pBITzBus` | `Footprints:AMPHENOL_10018783-10202TLF` |
-| `J5` | `pBITzBus` | `Footprints:AMPHENOL_10018783-10202TLF` |
-| `J6` | `pBITzBus` | `Footprints:SAMTEC_PCIE-098-02-X-D-RA` |
+| Address | `A0..A23` | 24-bit parallel address bus. |
+| Data | `D0..D15` | 16-bit parallel data bus. |
+| Control | `CTRL_0..CTRL_19` | Cross-CPU control vocabulary; see `pBITz_Control_Signals.md`. |
+| Device select | `CS0..CS3` | Push-pull 4-bit device address `CS[3:0]`; `0000` means no device selected. |
+| General clocks | `CLK0`, `CLK1` | Two current general-purpose pBITz clock lines. Passive distribution only. |
+| Auxiliary control | `/PROG`, `/CART` | Platform/machine auxiliary control lines. |
+| Service SPI | `SPI_CLK`, `MOSI`, `MISO`, `SPI_CS0`, `SPI_CS1`, `/SPI_INT`, `/SPI_CD` | Shared platform service interface. `SPI_CLK` is separate from the general pBITz clock lines. |
+| Power management | `/PWR_OFF`, `/SHUTDOWN_RQ` | PMU/IO-controller shutdown handshake. |
+| Power | `+5V`, `+3V3`, `GND` | Distributed to expansion and cartridge connectors. |
 
-## Power Architecture
+### Clock count
 
-`J1` is the ATX-24 input. The active design uses the ATX `+3.3V`, `+5V`,
-`+5VSB`, `GND`, `PWR_OK`, and `PS_ON#` pins. The `+12V`, `-12V`, and ATX `NC`
-pins are unconnected in the schematic netlist.
+The **current bus has two general clock lines: `CLK0` and `CLK1`**.
 
-| ATX pin group | Backplane net | Use |
-| --- | --- | --- |
-| `+3.3V` pins 1, 2, 12, 13 | `+3V3` | Distributed to every pBITz slot on A9, A10, B9, B10; also J7 pin 2. |
-| `+5V` pins 4, 6, 21, 22, 23 | `+5V` | Distributed to every pBITz slot on A1, A2, B1, B2; feeds J7 pin 1, LEDs, and resistor-network commons. |
-| `+5VSB` pin 9 | `+5V_AON` | Always-on rail for the ATtiny power controller and its pull-ups/bulk caps. |
-| Ground pins | `GND` | Board ground, pBITz slot grounds, J7 grounds, logic ground. |
-| `PWR_OK` pin 8 | `/Power/PWR_OK` | ATtiny input on `U1.6/PB1`. |
-| `PS_ON#` pin 16 | `/Power/~{PS_ON}` | Pulled down through `Q1` under ATtiny control. |
+Older pBITz connector symbols and documentation contained additional `CLK2`/`CLK3` names. They are not active clocks in the current backplane. On the instantiated cartridge connector `J6`, the legacy A5/A6 positions associated with those old symbol names are explicitly unconnected; `CLK0` and `CLK1` are carried on J6 B5 and B6.
 
-The power-control island:
+`SPI_CLK` is the clock of the separate service SPI interface and is not counted as a general pBITz CPU/peripheral clock.
 
-| Ref | Part | Role |
-| --- | --- | --- |
-| `U1` | `ATtiny85-20P` | Standby-powered power supervisor/controller. |
-| `Q1` | `BSS138` | Pull-down path for ATX `PS_ON#`. Source is `GND`, drain is `/Power/~{PS_ON}`, gate is driven by `U1.5/PB0`. |
-| `SW1` | `SW_Push` | Power button input path to `U1.7/PB2` through `R1`. |
-| `R5` | `10k` | Pull-up from ATtiny reset net to `+5V_AON`. |
-| `R6` | `10k` | Pull-down from Q1 gate to `GND`. |
-| `R8` | `10k` | Pull-up from `/Backplane/~{PWR_OFF}` to `+5V_AON`. |
-| `D1`, `D2` | LED indicators | LED anodes on `+5V`; cathodes return through `R20` and `R19` respectively. |
+The backplane does not synthesize or condition `CLK0` or `CLK1`; it only distributes them. Their source and meaning are defined by the machine/CPU implementation.
 
-ATtiny pin use:
+---
 
-| U1 pin | ATtiny function | Schematic net |
-| ---: | --- | --- |
-| 1 | `~{RESET}/PB5` | `Net-(U1-~{RESET}{slash}PB5)` |
-| 2 | `XTAL1/PB3` | `/Backplane/~{SHUTDOWN_RQ}` |
-| 3 | `XTAL2/PB4` | `/Backplane/~{PWR_OFF}` |
-| 4 | `GND` | `GND` |
-| 5 | `AREF/PB0` | `Net-(Q1-G)` |
-| 6 | `PB1` | `/Power/PWR_OK` |
-| 7 | `PB2` | `/Power/PWR_SW` |
-| 8 | `VCC` | `+5V_AON` |
+## 4. DIN 41612 expansion-slot pinout
 
-### Power Up/Down Protocol
+`J8` through `J11` are electrically identical 96-position DIN 41612 pBITz slots. The connector uses rows A, B, and C with positions 1 through 32.
 
-The PMU is the always-on power-control island powered from `+5V_AON`. The IO
-Controller participates in shutdown through the two active-low backplane power
-control nets. In firmware discussions, `/PWR_OFF` and `/SHUTDOWN_RQ` refer to
-the active-low schematic nets `/Backplane/~{PWR_OFF}` and
-`/Backplane/~{SHUTDOWN_RQ}`.
+| Pos. | Row A | Row B | Row C |
+| ---: | --- | --- | --- |
+| 1 | `+5V` | `+5V` | `/PWR_OFF` |
+| 2 | `+5V` | `+5V` | `/SHUTDOWN_RQ` |
+| 3 | `+3V3` | `+3V3` | `GND` |
+| 4 | `+3V3` | `+3V3` | `GND` |
+| 5 | `CLK0` | `CLK1` | `SPI_CLK` |
+| 6 | `/PROG` | `/CART` | `/SPI_CD` |
+| 7 | `CTRL_0` (`/RESET`) | `CTRL_1` | `CTRL_2` |
+| 8 | `CTRL_3` | `CTRL_4` | `CTRL_5` |
+| 9 | `CTRL_6` | `CTRL_7` | `CTRL_8` |
+| 10 | `CTRL_9` | `CTRL_10` | `CTRL_11` |
+| 11 | `CTRL_12` | `CTRL_13` | `CTRL_14` |
+| 12 | `CTRL_15` | `CTRL_16` | `CTRL_17` |
+| 13 | `CTRL_18` | `CTRL_19` | `CS0` |
+| 14 | `CS1` | `CS2` | `CS3` |
+| 15 | `D0` | `D1` | `D2` |
+| 16 | `D3` | `D4` | `D5` |
+| 17 | `D6` | `D7` | `D8` |
+| 18 | `D9` | `D10` | `D11` |
+| 19 | `D12` | `D13` | `D14` |
+| 20 | `D15` | `GND` | `GND` |
+| 21 | `A0` | `A1` | `A2` |
+| 22 | `A3` | `A4` | `A5` |
+| 23 | `A6` | `A7` | `A8` |
+| 24 | `A9` | `A10` | `A11` |
+| 25 | `A12` | `A13` | `A14` |
+| 26 | `A15` | `A16` | `A17` |
+| 27 | `A18` | `A19` | `A20` |
+| 28 | `A21` | `A22` | `A23` |
+| 29 | `GND` | `GND` | `GND` |
+| 30 | `/SPI_INT` | `MISO` | `MOSI` |
+| 31 | `SPI_CS0` | `SPI_CS1` | `GND` |
+| 32 | `GND` | `GND` | `GND` |
 
-| Signal | Direction | Pull-up | PMU / ATtiny mode | IO Controller / requester mode | Protocol |
-| --- | --- | --- | --- | --- | --- |
-| `/PWR_OFF` | To PMU | `+5V_AON` | Input | Any requester is output-low or Hi-Z only; never drive high. | Level signal. `HIGH` means unasserted and requests/permits `KEEP POWER ON`; `LOW` means asserted and requests `REMOVE POWER`. |
-| `/SHUTDOWN_RQ` | From PMU | IO Controller `+5V`; no backplane pull-up/down. | Output-low or Hi-Z only; never drive high. | IO Controller PIC input only, with `ANSEL` cleared. | Edge signal. The PMU uses the assertion edge to advise the IO Controller to clean up for shutdown. |
+The connector shield/mechanical contacts `S1` and `S2` are also tied to `GND`.
 
-Firmware must configure these pins as open-drain style participants: a device
-may assert by driving low, and must deassert by releasing the line to Hi-Z. The
-pull-up defines the high state.
+The DIN layout deliberately groups related signals while inserting ground positions through the connector, particularly around the address and service portions of the bus.
 
-Shutdown sequence:
+---
 
-1. During normal operation, `/PWR_OFF` remains high by pull-up so the PMU keeps
-   power on.
-2. When the PMU wants an orderly shutdown, it signals the IO Controller on
-   `/SHUTDOWN_RQ` with an assertion edge, then releases the line.
-3. The IO Controller performs shutdown cleanup.
-4. When cleanup is complete, the IO Controller asserts `/PWR_OFF` by driving it
-   low.
-5. The PMU treats low `/PWR_OFF` as the level request to remove power.
+## 5. Cartridge slot J6
 
-## pBITz Slot Bus
+`J6` is the dedicated cartridge connector. It uses the right-angle Samtec `PCIE-098-02-X-D-RA`, a 98-contact connector with A and B sides numbered 1 through 49.
 
-`J2` through `J6` share the same electrical pinout. The connectors carry a
-24-bit address bus, 16-bit data bus, 20 control lines, four chip-select lines,
-four clock nets, SPI/service nets, power, ground, and two power-control nets.
+Although the mechanical format is PCIe x8, **the entire electrical assignment is custom pBITz**.
 
-The current schematic names the SPI clock net `/Backplane/SLK_CLK`, while the
-connector pin function is `SPI_CLK`. Treat `SLK_CLK` as the schematic net name.
+### 5.1 Cartridge bus coverage
 
-| Pin index | A-side net | B-side net |
+The cartridge connector exposes the full current pBITz interface needed by a cartridge to behave like a directly attached bus device:
+
+- all `A0..A23` address lines;
+- all `D0..D15` data lines;
+- all `CTRL_0..CTRL_19` control lines;
+- all four `CS[3:0]` device-select lines;
+- both current general clocks, `CLK0` and `CLK1`;
+- `/PROG` and `/CART`;
+- the complete SPI/service interface;
+- `/PWR_OFF` and `/SHUTDOWN_RQ`;
+- `+5V`, `+3V3`, and ground.
+
+The cartridge slot is therefore not a reduced sideband interface. Electrically it is another endpoint on the pBITz bus, with a different mechanical connector chosen for cartridge use.
+
+### 5.2 Cartridge physical pinout
+
+| Pos. | Side A | Side B |
 | ---: | --- | --- |
 | 1 | `+5V` | `+5V` |
 | 2 | `+5V` | `+5V` |
-| 3 | `/Backplane/~{SHUTDOWN_RQ}` | `/Backplane/~{PWR_OFF}` |
+| 3 | `/SHUTDOWN_RQ` | `/PWR_OFF` |
 | 4 | `GND` | `GND` |
-| 5 | `/Backplane/CLK2` | `/Backplane/CLK0` |
-| 6 | `/Backplane/CLK3` | `/Backplane/CLK1` |
-| 7 | `/Backplane/SLK_CLK` | `/Backplane/SPI_CD` |
-| 8 | `/Backplane/PROG` | `/Backplane/CART` |
+| 5 | **NC** (legacy `CLK2` position) | `CLK0` |
+| 6 | **NC** (legacy `CLK3` position) | `CLK1` |
+| 7 | `SPI_CLK` | `/SPI_CD` |
+| 8 | `/PROG` | `/CART` |
 | 9 | `+3V3` | `+3V3` |
 | 10 | `+3V3` | `+3V3` |
-| 11 | `/Backplane/CTRL_10` | `/Backplane/~{RESET}` |
-| 12 | `/Backplane/CTRL_11` | `/Backplane/CTRL_1` |
-| 13 | `/Backplane/CTRL_12` | `/Backplane/CTRL_2` |
-| 14 | `/Backplane/CTRL_13` | `/Backplane/CTRL_3` |
-| 15 | `/Backplane/CTRL_14` | `/Backplane/CTRL_4` |
-| 16 | `/Backplane/CTRL_15` | `/Backplane/CTRL_5` |
-| 17 | `/Backplane/CTRL_16` | `/Backplane/CTRL_6` |
-| 18 | `/Backplane/CTRL_17` | `/Backplane/CTRL_7` |
-| 19 | `/Backplane/CTRL_18` | `/Backplane/CTRL_8` |
-| 20 | `/Backplane/CTRL_19` | `/Backplane/CTRL_9` |
-| 21 | `/Backplane/CS2` | `/Backplane/CS0` |
-| 22 | `/Backplane/CS3` | `/Backplane/CS1` |
-| 23 | `/Backplane/D8` | `/Backplane/D0` |
-| 24 | `/Backplane/D9` | `/Backplane/D1` |
-| 25 | `/Backplane/D10` | `/Backplane/D2` |
-| 26 | `/Backplane/D11` | `/Backplane/D3` |
-| 27 | `/Backplane/D12` | `/Backplane/D4` |
-| 28 | `/Backplane/D13` | `/Backplane/D5` |
-| 29 | `/Backplane/D14` | `/Backplane/D6` |
-| 30 | `/Backplane/D15` | `/Backplane/D7` |
+| 11 | `CTRL_10` | `CTRL_0` (`/RESET`) |
+| 12 | `CTRL_11` | `CTRL_1` |
+| 13 | `CTRL_12` | `CTRL_2` |
+| 14 | `CTRL_13` | `CTRL_3` |
+| 15 | `CTRL_14` | `CTRL_4` |
+| 16 | `CTRL_15` | `CTRL_5` |
+| 17 | `CTRL_16` | `CTRL_6` |
+| 18 | `CTRL_17` | `CTRL_7` |
+| 19 | `CTRL_18` | `CTRL_8` |
+| 20 | `CTRL_19` | `CTRL_9` |
+| 21 | `CS2` | `CS0` |
+| 22 | `CS3` | `CS1` |
+| 23 | `D8` | `D0` |
+| 24 | `D9` | `D1` |
+| 25 | `D10` | `D2` |
+| 26 | `D11` | `D3` |
+| 27 | `D12` | `D4` |
+| 28 | `D13` | `D5` |
+| 29 | `D14` | `D6` |
+| 30 | `D15` | `D7` |
 | 31 | `GND` | `GND` |
-| 32 | `/Backplane/A12` | `/Backplane/A0` |
-| 33 | `/Backplane/A13` | `/Backplane/A1` |
-| 34 | `/Backplane/A14` | `/Backplane/A2` |
+| 32 | `A12` | `A0` |
+| 33 | `A13` | `A1` |
+| 34 | `A14` | `A2` |
 | 35 | `GND` | `GND` |
-| 36 | `/Backplane/A15` | `/Backplane/A3` |
-| 37 | `/Backplane/A16` | `/Backplane/A4` |
-| 38 | `/Backplane/A17` | `/Backplane/A5` |
+| 36 | `A15` | `A3` |
+| 37 | `A16` | `A4` |
+| 38 | `A17` | `A5` |
 | 39 | `GND` | `GND` |
-| 40 | `/Backplane/A18` | `/Backplane/A6` |
-| 41 | `/Backplane/A19` | `/Backplane/A7` |
-| 42 | `/Backplane/A20` | `/Backplane/A8` |
+| 40 | `A18` | `A6` |
+| 41 | `A19` | `A7` |
+| 42 | `A20` | `A8` |
 | 43 | `GND` | `GND` |
-| 44 | `/Backplane/A21` | `/Backplane/A9` |
-| 45 | `/Backplane/A22` | `/Backplane/A10` |
-| 46 | `/Backplane/A23` | `/Backplane/A11` |
-| 47 | `/Backplane/~{SPI_INT}` | `GND` |
-| 48 | `/Backplane/MISO` | `/Backplane/MOSI` |
-| 49 | `/Backplane/SPI_CS0` | `/Backplane/SPI_CS1` |
+| 44 | `A21` | `A9` |
+| 45 | `A22` | `A10` |
+| 46 | `A23` | `A11` |
+| 47 | `/SPI_INT` | `GND` |
+| 48 | `MISO` | `MOSI` |
+| 49 | `SPI_CS0` | `SPI_CS1` |
 
-Bus group summary:
+The two explicit NC entries at A5 and A6 are intentional in the current design. They are remnants of the older connector symbol's larger clock allocation and must not be interpreted as active `CLK2`/`CLK3` signals.
 
-| Group | Nets | Notes |
-| --- | --- | --- |
-| Address | `A0` through `A23` | Commoned across all five slots. |
-| Data | `D0` through `D15` | Commoned across all five slots. |
-| Control | `~{RESET}`, `CTRL_1` through `CTRL_19` | `CTRL_0` appears as the connector pin function on B11, with the schematic net named `~{RESET}`. |
-| Chip select | `CS0` through `CS3` | Commoned across all five slots; generated elsewhere. |
-| Clock | `CLK0` through `CLK3` | Passive slot-to-slot distribution in this active hierarchy. |
-| Service SPI | `MOSI`, `MISO`, `SLK_CLK`, `SPI_CS0`, `SPI_CS1`, `SPI_CD`, `~{SPI_INT}` | Shared on all slots and exposed on J7. |
-| Power control | `~{SHUTDOWN_RQ}`, `~{PWR_OFF}` | Common across slots and tied to the always-on ATtiny controller. `/PWR_OFF` is pulled up to `+5V_AON` on the backplane; `/SHUTDOWN_RQ` has no backplane pull-up/down and is pulled up by the IO Controller. |
+---
 
-The bus pull-up architecture is intentional: all Data, Address, and non-SPI
-bus Control/select lines are pulled up. The slot clock nets and the SPI/service
-nets are not pulled up by the bus resistor networks. In this context, D/A/C
-pull-ups cover `A0`-`A23`, `D0`-`D15`, `~{RESET}`, `CTRL_1`-`CTRL_19`,
-`CS0`-`CS3`, `CART`, and `PROG`.
+## 6. Device selection and control semantics
 
-## Service Header J7
+The backplane transports the four `CS0..CS3` lines without decoding them. Collectively they form the push-pull 4-bit pBITz device address `CS[3:0]`:
 
-`J7` exposes the SPI/service bus on a 2x10 IDC header. The schematic netlist
-maps it as follows:
+- `0000` means **no pBITz device selected**;
+- `0001` through `1111` select device addresses 1 through 15.
 
-| J7 pin | Net |
+The CPU-side I/O decoder/MMU determines that a valid peripheral access is occurring and drives the device address. The selected card normally compares that value with a configured device number and then uses normal address lines for register or sub-device decode.
+
+The meanings and CPU-family mappings of `CTRL_0..CTRL_19` are intentionally not duplicated here. See [`../pBITz_Control_Signals.md`](../pBITz_Control_Signals.md).
+
+---
+
+## 7. Backplane pull-ups and idle state
+
+The backplane defines the idle state of the ordinary parallel bus with pull-up resistor networks.
+
+The following shared bus groups are pulled high by the backplane:
+
+- `A0..A23`;
+- `D0..D15`;
+- the parallel `CTRL_*` controls, including reset;
+- `CS0..CS3`;
+- the non-clock auxiliary parallel controls such as `/PROG` and `/CART`.
+
+The current design uses 4.7 kΩ bussed resistor networks (`4614X-101-472LF`) for these parallel-bus pull-ups.
+
+The general clock lines and SPI/service bus are **not** part of this pull-up network:
+
+- `CLK0` and `CLK1` are not pulled up by the general bus networks;
+- `SPI_CLK`, `MOSI`, `MISO`, `SPI_CS0`, `SPI_CS1`, `/SPI_INT`, and `/SPI_CD` are not treated as ordinary pulled-up parallel bus lines.
+
+The power-management handshake lines have their own electrical rules and are described separately below.
+
+This distinction is important for card design: cards can assume a defined high idle state on the normal address/data/control bus, but must not assume the same biasing on clocks or the SPI/service interface.
+
+---
+
+## 8. Platform service header J7
+
+`J7` is a 2x10 IDC header (`SBH11-PBPC-D10-ST-BK`) used to connect the backplane service interface to the USB/SD mezzanine.
+
+| J7 pin | Signal |
 | ---: | --- |
 | 1 | `+5V` |
 | 2 | `+3V3` |
-| 3 | `/Backplane/MOSI` |
-| 4 | `/Backplane/SPI_CS0` |
-| 5 | `/Backplane/MISO` |
+| 3 | `MOSI` |
+| 4 | `SPI_CS0` |
+| 5 | `MISO` |
 | 6 | `GND` |
 | 7 | `GND` |
-| 8 | `/Backplane/SPI_CS1` |
-| 9 | `/Backplane/SLK_CLK` |
+| 8 | `SPI_CS1` |
+| 9 | `SPI_CLK` |
 | 10 | `GND` |
 | 11 | `GND` |
-| 12 | `unconnected-(J7-Pin_12-Pad12)` |
-| 13 | `/Backplane/~{SPI_INT}` |
+| 12 | NC |
+| 13 | `/SPI_INT` |
 | 14 | `GND` |
 | 15 | `GND` |
 | 16 | `GND` |
-| 17 | `/Backplane/SPI_CD` |
+| 17 | `/SPI_CD` |
 | 18 | `GND` |
 | 19 | `GND` |
 | 20 | `GND` |
 
-## Bus Pull-Up Networks
+The service SPI bus is a platform facility and is separate from CPU-family-specific parallel bus timing. The mezzanine currently uses this interface for shared USB-host and SD-card services.
 
-The backplane uses four 4.7k Bourns resistor-network packages with their common
-pins tied to `+5V`. These implement the D/A/C pull-up rule: every data net,
-every address net, and every non-SPI/non-clock bus control/select net is pulled
-up through `RN1`-`RN4`.
+---
 
-| Ref | Part | Common pin | Covered nets |
-| --- | --- | --- | --- |
-| `RN1` | `4820P-2-472LF` | pin 20 to `+5V` | `CART`, `~{RESET}`, `CTRL_1` through `CTRL_8`, `CTRL_10` through `CTRL_17`, `PROG` |
-| `RN2` | `4820P-2-472LF` | pin 20 to `+5V` | `A4` through `A11`, `A15` through `A23`; pads 10 and 11 unconnected |
-| `RN3` | `4816P-T02-472LF` | pin 16 to `+5V` | `A0` through `A3`, `A12` through `A14`, `D4` through `D7`, `D12` through `D15` |
-| `RN4` | `4816P-T02-472LF` | pin 16 to `+5V` | `CTRL_9`, `CTRL_18`, `CTRL_19`, `CS0` through `CS3`, `D0` through `D3`, `D8` through `D11` |
+## 9. Power architecture
 
-Notably, slot clock nets `CLK0`-`CLK3` and SPI/service nets `MOSI`, `MISO`,
-`SLK_CLK`, `SPI_CS0`, `SPI_CS1`, `SPI_CD`, and `~{SPI_INT}` are not on these
-pull-up networks.
+### 9.1 ATX input
 
-## Decoupling And Bulk Capacitance
+`J1` is the 24-pin ATX power connector. The backplane uses:
 
-The schematic places both bulk and local decoupling around the rails:
+- `+3.3V` to create the distributed `+3V3` rail;
+- `+5V` to create the distributed `+5V` rail;
+- `+5VSB` as the always-on `+5V_AON` rail for the PMU;
+- `GND`;
+- `PWR_OK`; and
+- `PS_ON#`.
 
-| Rail | Capacitors |
-| --- | --- |
-| `+5V_AON` | `C1`, `C6`, `C7` |
-| `+5V` | `C2`, `C3`, `C12`, `C13`, `C14`, `C15`, `C17` |
-| `+3V3` | `C4`, `C5`, `C8`, `C9`, `C10`, `C11`, `C16` |
+The pBITz bus does not distribute the ATX `+12V` or `-12V` rails in the current design.
 
-The `100n` capacitors sit near slot/logic rail locations, while the `47u` and
-`100u` capacitors provide bulk storage on the power rails.
+### 9.2 PMU
 
-## Architectural Conclusions
+The backplane contains a small always-on power-management island built around:
 
-The board is a shared passive bus backplane with a small always-on power
-controller. It does not decode addresses, buffer the CPU bus, or generate the
-slot chip selects locally in the active schematic hierarchy. Slot cards see the
-same address, data, control, select, clock, service SPI, rail, and ground nets
-on `J2` through `J6`.
+- `U1`, an `ATtiny85-20P` powered from `+5V_AON`;
+- `Q1`, a `BSS138` used to pull ATX `PS_ON#` low;
+- the enclosure power-switch input;
+- `PWR_OK` sensing; and
+- the `/PWR_OFF` / `/SHUTDOWN_RQ` handshake with the machine's IO Controller.
 
-Power sequencing is centralized in the ATtiny island: `+5VSB` powers `U1`, `U1`
-observes the ATX `PWR_OK` and the local power button path, can pull ATX
-`PS_ON#` low through `Q1`, and also connects to the backplane-wide
-`~{SHUTDOWN_RQ}` and `~{PWR_OFF}` lines. `/PWR_OFF` is pulled up to `+5V_AON`
-and is a level input to the PMU. `/SHUTDOWN_RQ` is an edge signal from the PMU
-with its system pull-up on the IO Controller `+5V` side. Firmware must treat
-both as active-low open-drain style signals and must not actively drive either
-line high.
+This is the only significant active logic on the backplane itself.
 
-The service header is a direct breakout of the shared SPI/service nets plus
-`+5V`, `+3V3`, and ground. The pBITz connector pinout is therefore the main
-system contract: CPU, memory, I/O, and peripheral cards are expected to agree on
-the shared bus semantics documented in the pinout table above.
+### 9.3 Shutdown handshake
+
+The intended active-low power-control protocol is:
+
+| Signal | Role | Electrical behavior |
+| --- | --- | --- |
+| `/PWR_OFF` | Request to the PMU to remove main power | Pulled up to `+5V_AON` on the backplane. Requesters assert by driving low and otherwise release the line. |
+| `/SHUTDOWN_RQ` | PMU request for orderly machine shutdown | PMU asserts low/release; the IO Controller provides the operating-side pull-up. |
+
+Typical orderly shutdown sequence:
+
+1. `/PWR_OFF` is high during normal operation.
+2. The PMU asserts `/SHUTDOWN_RQ` to ask the IO Controller to perform shutdown cleanup.
+3. The IO Controller completes pending work and prepares the machine for power removal.
+4. The IO Controller asserts `/PWR_OFF` low.
+5. The PMU removes main ATX power through `PS_ON#` control.
+
+The exact PMU state machine is implemented in [`../Code/PMU/`](../Code/PMU/).
+
+---
+
+## 10. Architectural boundaries
+
+The backplane deliberately does **not** define:
+
+- the CPU's memory map;
+- where the pBITz peripheral aperture lives;
+- which physical CPU signal directly corresponds to every `CTRL_*` line;
+- clock frequencies carried on `CLK0` or `CLK1`;
+- interrupt encoding inside a particular CPU family;
+- wait-state translation for a particular CPU; or
+- which device number is assigned to a particular peripheral card.
+
+Those decisions belong to the CPU board and machine architecture. The backplane provides the common electrical vocabulary and mechanical infrastructure on which those machines are built.
+
+---
+
+## 11. Source-of-truth and revision policy
+
+For the current hardware revision:
+
+1. the KiCad schematic hierarchy rooted at `pBITzBackplane.kicad_sch` is authoritative for connectivity;
+2. this architecture document describes the intent and physical pin mapping of that schematic;
+3. [`../pBITz_Control_Signals.md`](../pBITz_Control_Signals.md) is authoritative for the portable logical meanings of `CTRL_*` and `CS[3:0]`;
+4. PCB, BOM, Gerber, validation, and production files should always be checked against the revision from which they were generated.
+
+Useful repo-relative review commands include:
+
+```sh
+python3 Code/tools/kicad_nettrace.py pBITzBackplane/pBITzBackplane.kicad_sch --check
+python3 Code/tools/kicad_nettrace.py pBITzBackplane/pBITzBackplane.kicad_sch --list-nets
+```
+
+When helper tooling and KiCad disagree, the current KiCad schematic/netlist is the source of truth.
