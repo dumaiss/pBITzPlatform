@@ -1,10 +1,10 @@
 # pBITz Control Signal Conventions
 
-This document defines the **logical meaning and recommended use of the pBITz `CTRL_*` signals**.
+This document defines the **logical meaning and recommended use of the pBITz control and device-selection signals**.
 
-It intentionally does **not** define connector pin numbers, connector rows, routing, pull-ups, termination, or other physical implementation details. Those belong in the pBITz Backplane Architecture documentation and the KiCad design files.
+It intentionally does **not** define connector pin numbers, connector rows, PCB routing, pull-up component values, or other connector-specific implementation details. Those belong in the pBITz Backplane Architecture documentation and the KiCad design files.
 
-The purpose of the `CTRL_*` convention is to make expansion cards as reusable as practical across machines built around different CPU and bus families. In particular, simple video, sound, storage, and I/O cards should see a familiar peripheral-facing bus even when the CPU itself does not natively provide Z80-style `/RD`, `/WR`, `/MREQ`, or `/IORQ` signals.
+The purpose of the pBITz signal convention is to make expansion cards as reusable as practical across machines built around different CPU and bus families. In particular, simple video, sound, storage, and I/O cards should see a familiar peripheral-facing bus even when the CPU itself does not natively provide Z80-style `/RD`, `/WR`, `/MREQ`, or `/IORQ` signals.
 
 The guiding principle is:
 
@@ -18,7 +18,7 @@ This is a compatibility convention rather than an attempt to force every process
 
 The control-signal map is intended to provide four things:
 
-1. **A stable peripheral interface.** Common cards should be able to depend on reset, read, write, wait-state, and interrupt semantics without caring which CPU family is installed.
+1. **A stable peripheral interface.** Common cards should be able to depend on reset, read, write, device-select, wait-state, and interrupt semantics without caring which CPU family is installed.
 2. **A natural mapping for simple 8-bit CPUs.** A Z80-like bus can expose most of the core pBITz controls directly.
 3. **A normalization target for other buses.** Memory-mapped CPUs, 16/32-bit CPUs, and MCU/SoC external buses can use glue logic to synthesize the same peripheral-facing controls.
 4. **Room for family-specific extensions.** Signals with no meaningful common semantic are not forced into false equivalence merely to fill the connector.
@@ -27,13 +27,30 @@ The CPU board, or the glue logic associated with it, is therefore responsible fo
 
 ---
 
-## 2. Naming and polarity
+## 2. Naming, polarity, and idle state
 
-The physical bus signals remain named `CTRL_0` through `CTRL_19`.
+The physical control signals remain named `CTRL_0` through `CTRL_19`.
 
 This document assigns semantic names such as `/RD` or `/WAIT` to those signals for discussion. A leading `/` means **active low**.
 
-Unless a machine-specific extension explicitly says otherwise, expansion cards should interpret the canonical active-low controls according to the semantics in this document rather than according to the native signal name of any particular CPU.
+The four device-selection lines are named `CS0` through `CS3` and are treated collectively as the 4-bit device-select address `CS[3:0]`. They are described separately from the `CTRL_*` block because they encode **which peripheral is being addressed**, rather than the type or phase of the bus transaction.
+
+Unless a machine-specific extension explicitly says otherwise, expansion cards should interpret the canonical controls according to the semantics in this document rather than according to the native signal name of any particular CPU.
+
+### Backplane pull-ups
+
+The pBITz backplane provides pull-ups on the shared **control, device-select, address, and data lines**. This includes:
+
+- `CTRL_*`;
+- `CS[3:0]`;
+- the address bus; and
+- the data bus.
+
+The backplane does **not** provide these general pull-ups on the clock signals or on the SPI/service-bus signals.
+
+This gives the ordinary parallel bus a defined high idle state when a driver is inactive, in reset, or has released the bus. Card designs should take this into account and should not add strong conflicting bias networks to these shared lines without a specific reason.
+
+The exact pull-up implementation and resistor values remain a backplane electrical-design detail and belong in the Backplane Architecture and KiCad design rather than in this logical signal convention.
 
 ---
 
@@ -60,14 +77,14 @@ Unless a machine-specific extension explicitly says otherwise, expansion cards s
 | `CTRL_16` | Secondary interrupt / family extension | Card → CPU | Optional | Reserved for a useful secondary interrupt class, such as a fast interrupt, when a machine defines one. Portable cards should not require it. |
 | `CTRL_17` | Reserved | — | Reserved | No portable interrupt-chain or vectoring semantic is currently assigned. |
 | `CTRL_18` | Reserved | — | Reserved | No portable interrupt-chain or vectoring semantic is currently assigned. |
-| `CTRL_19` | `/CS_CART` | CPU/decode → card | Platform optional | Cartridge/boot-ROM select generated by the machine's address decode when that feature exists. |
+| `CTRL_19` | `/CS_CART` | CPU/decode → card | Platform optional | Dedicated cartridge/boot-ROM select generated by machine decode when that feature exists. It is separate from the normal `CS[3:0]` device-select address. |
 
 ### Core peripheral subset
 
 A simple reusable 8-bit peripheral should ideally need only:
 
 - its normal address and data lines;
-- one of the standard pBITz card/chip-select signals;
+- the `CS[3:0]` device-select address;
 - `CTRL_0` (`/RESET`);
 - `CTRL_1` (`/RD`);
 - `CTRL_2` (`/WR`);
@@ -76,11 +93,11 @@ A simple reusable 8-bit peripheral should ideally need only:
 
 This is the preferred compatibility target for video, sound, and other register-oriented cards.
 
-A card that is fully qualified by its chip-select generally does **not** need to depend on `/MREQ` or `/IORQ`. This is desirable because it allows the CPU board to choose whether a peripheral appears in native I/O space or in a memory-mapped compatibility aperture.
+A card that is fully qualified by its decoded device-select generally does **not** need to depend on `/MREQ` or `/IORQ`. This is desirable because it allows the CPU board to choose whether a peripheral appears in native I/O space, a memory-mapped compatibility aperture, or another MMU-defined region.
 
 ---
 
-## 4. Transaction semantics
+## 4. Transaction and device-selection semantics
 
 ### 4.1 `/RD` and `/WR` are peripheral strobes, not raw CPU pins
 
@@ -103,9 +120,50 @@ For a memory-mapped CPU, the CPU board may reserve an address region as a **pBIT
 
 This lets a card that genuinely requires an I/O-cycle qualifier remain reusable on a memory-mapped processor.
 
-Simple cards should still prefer the standard decoded card-select signals where possible and avoid depending on the distinction.
+Simple cards should still prefer the standard decoded device-select mechanism where possible and avoid depending on the distinction.
 
-### 4.3 `/WAIT` always means "the target is not ready"
+### 4.3 `CS[3:0]` is a device address, not four one-hot chip selects
+
+The pBITz device-selection mechanism separates **device selection** from **device-internal address decoding**.
+
+The CPU-side I/O decoder, MMU, or equivalent glue first determines whether the current CPU access represents a valid pBITz peripheral transaction. When it does, the normal address bus is presented as usual **and** the CPU-side decode logic drives a 4-bit device address on `CS[3:0]`.
+
+The encoding is:
+
+| `CS[3:0]` | Meaning |
+| --- | --- |
+| `0000` | No pBITz device selected |
+| `0001`–`1111` | Device address 1–15 selected |
+
+Thus pBITz supports up to **15 normal device addresses** through this first-stage decode.
+
+On an expansion card, the usual implementation is:
+
+1. decode or compare `CS[3:0]` against the card's configured device address;
+2. generate a local card-select signal when the values match; and
+3. use the ordinary address lines for any required register, port, memory-window, or sub-device decoding within that card.
+
+The device address is commonly configured with a small DIP switch, rotary hexadecimal/BCD-style switch, jumper field, or equivalent configuration mechanism. A card should not claim device address `0000`; treating a configured value of zero as **disabled** is a useful implementation convention.
+
+Conceptually:
+
+```text
+CPU address/MMU decode
+        │
+        ├── normal address bus ───────────────────────► card sub-decode
+        │
+        └── valid pBITz device number ─► CS[3:0] ───► address compare
+                                                        │
+                                                        └── local /CS
+```
+
+This mechanism is deliberately independent of the CPU's native I/O model. A Z80 can derive it from an `/IORQ` decode, a 6809/68k system can derive it from a memory-mapped I/O aperture, and an MCU can derive it from an external-memory-controller region. In each case, the expansion card sees the same device number.
+
+The CPU-side decoder should drive `CS[3:0] = 0000` whenever no pBITz peripheral is selected. A non-zero device address therefore represents an explicit first-stage selection rather than requiring every card to decode the full system address map itself.
+
+`CTRL_19` (`/CS_CART`) is a separate optional dedicated cartridge/boot-ROM select and is **not** device address 15 or otherwise part of the `CS[3:0]` namespace.
+
+### 4.4 `/WAIT` always means "the target is not ready"
 
 `CTRL_12` has one portable semantic:
 
@@ -115,7 +173,7 @@ The CPU board must translate that request into the processor's native cycle-exte
 
 This distinction matters on buses such as the 68000 family. `/DTACK` is an active-low **completion/acknowledge** signal, while pBITz `/WAIT` is an active-low **hold/not-ready** signal. They therefore must not simply be treated as the same wire. A 68k CPU-side bridge should withhold `/DTACK` while pBITz `/WAIT` is asserted and complete the native transaction only when the pBITz target is ready.
 
-### 4.4 Interrupt lines carry semantic requests
+### 4.5 Interrupt lines carry semantic requests
 
 `CTRL_14` and `CTRL_15` describe interrupt classes rather than specific CPU pins.
 
@@ -131,6 +189,8 @@ Interrupt acknowledge cycles, vector presentation, and priority daisy chains are
 ## 5. CPU-family mapping guidance
 
 The mappings below describe how a CPU board should normally adapt its native signals to the pBITz semantics. They are guidance for CPU-board glue design, not additional signals exposed by the backplane.
+
+For every CPU family, the CPU-side address decoder or MMU is also responsible for producing the `CS[3:0]` device address for a valid peripheral access and `0000` when no pBITz device is selected. This first-stage device decode is intentionally kept on the CPU side so expansion cards do not need to know the host machine's full address map.
 
 ### 5.1 Z80-family buses
 
@@ -159,6 +219,8 @@ A Z80-style bus is close to the canonical pBITz model and requires little transl
 | `CTRL_18` | Reserved |
 | `CTRL_19` | `/CS_CART`, generated by address decode if supported |
 
+For ordinary peripherals, the I/O decoder can use the Z80 address and `/IORQ` cycle to produce the appropriate `CS[3:0]` device number. The card then needs only the device-select code plus whatever low-order address bits it uses internally.
+
 `/M1` is useful as a native Z80 status signal, but portable expansion cards should not assume that another CPU family can reproduce its exact semantics.
 
 The pBITz convention does **not** currently require the Z80 `IEI`/`IEO` daisy chain to be carried by `CTRL_17` and `CTRL_18`. A physical interrupt-priority chain is topology-sensitive and should not be implied by two ordinary shared control signals.
@@ -172,6 +234,7 @@ Recommended behaviour:
 - Generate `CTRL_1` (`/RD`) and `CTRL_2` (`/WR`) from `R/W`, qualified by the valid portion of the processor bus cycle.
 - Generate `CTRL_3` (`/MREQ`) from the processor's valid-memory-cycle timing.
 - If I/O-space compatibility is desired, reserve an address aperture and generate `CTRL_4` (`/IORQ`) when that aperture is accessed.
+- Decode that aperture into `CS[3:0]` device numbers so normal pBITz cards do not need to decode the machine's full memory map.
 - Do not force an approximate instruction-cycle signal onto `CTRL_5` merely to imitate `/M1`; leave it unused unless a machine has a genuine use for family-specific cycle status.
 - Treat `CTRL_7` cautiously. The native `HALT` function on this family is primarily a CPU-control input, not a portable equivalent of the Z80 `/HALT` status output.
 - Translate `CTRL_10`/`CTRL_11` into the family's bus-release mechanism. A typical implementation can use HALT/bus-control logic for the request and BA/BS-derived state to determine when the bus is actually available.
@@ -188,7 +251,8 @@ Recommended behaviour:
 
 - Generate pBITz `/RD` and `/WR` from `R/W` and the valid phase of `PHI2`.
 - On a 65816, use `VDA`/`VPA` as appropriate to ensure that pBITz transactions are generated only for valid external address cycles.
-- Generate `CTRL_4` (`/IORQ`) from an address-decoded I/O aperture when compatibility with I/O-space peripherals is useful; otherwise peripherals may simply remain memory mapped and use the standard card-select lines.
+- Generate `CTRL_4` (`/IORQ`) from an address-decoded I/O aperture when compatibility with I/O-space peripherals is useful; otherwise peripherals may simply remain memory mapped and use `CS[3:0]` as their first-stage selection.
+- Decode the chosen I/O/peripheral region into `CS[3:0]` device numbers 1–15.
 - `VPA` may be useful internally to CPU glue, but it is not an exact replacement for Z80 `/M1` and should not be treated as a portable `CTRL_5` semantic.
 - Translate pBITz `/WAIT` into the native `RDY` mechanism.
 - Map `CTRL_14` and `CTRL_15` to the native maskable and non-maskable interrupt inputs where available.
@@ -206,6 +270,7 @@ Recommended behaviour:
 - Derive `CTRL_1` (`/RD`) and `CTRL_2` (`/WR`) from `/AS`, `R/W`, and the active byte-lane strobes. Do **not** expose the raw `R/W` line as though it were pBITz `/WR`.
 - Generate `CTRL_3` (`/MREQ`) for ordinary pBITz memory transactions.
 - Since the 68000 has memory-mapped I/O, generate `CTRL_4` (`/IORQ`) from a reserved pBITz I/O aperture if I/O-space card compatibility is desired.
+- Decode that aperture into `CS[3:0]`, leaving the card to use only its local address bits for sub-decoding.
 - For a native 16-bit pBITz transfer, map `CTRL_8` to the upper-byte lane and `CTRL_9` to the lower-byte lane. On a 68000/68010 these correspond naturally to `/UDS` and `/LDS` respectively.
 - For reusable 8-bit cards on `D7..D0`, the CPU-side bridge/address decode should hide the 68000's byte-lane and odd/even-address details from the card whenever practical.
 - Map the arbitration request toward `/BR`; generate the pBITz `/BUSACK` semantic only when the native grant/acknowledge sequence has actually made the bus available.
@@ -221,6 +286,7 @@ Their wider buses and transfer-size/acknowledge conventions should be translated
 
 - separate `/RD` and `/WR` peripheral strobes;
 - the pBITz memory/I/O-space convention;
+- CPU/MMU first-stage decode into the `CS[3:0]` device address;
 - appropriate `CTRL_8`/`CTRL_9` byte-lane qualification for the 16-bit pBITz data path;
 - `/WAIT` translated into the CPU's native acknowledge/termination mechanism;
 - bus arbitration translated into pBITz `/BUSREQ` and `/BUSACK`; and
@@ -238,6 +304,7 @@ The same rules apply:
 
 - expose clean peripheral-facing `/RD` and `/WR` strobes;
 - synthesize `/IORQ` from an address aperture when useful;
+- map native address regions or chip-selects into the portable `CS[3:0]` device-address namespace;
 - preserve the pBITz `/WAIT` meaning rather than copying a native acknowledge signal with opposite polarity/semantics; and
 - hide native interrupt encoding and bus-width details from ordinary expansion cards.
 
@@ -249,7 +316,9 @@ The following informal profiles help card designers decide how portable a design
 
 ### Profile A — Simple peripheral
 
-Uses only decoded card select, `CTRL_0`, `CTRL_1`, and `CTRL_2`, plus address/data lines.
+Uses `CS[3:0]` device selection, `CTRL_0`, `CTRL_1`, and `CTRL_2`, plus address/data lines.
+
+The card compares `CS[3:0]` against its configured device address and uses only the address bits needed for its own internal register or memory map.
 
 Optional use of `CTRL_12` and `CTRL_14` is still considered highly portable.
 
@@ -259,7 +328,7 @@ This is the preferred profile for maximum Coffee-series reuse.
 
 ### Profile B — Address-space-aware peripheral
 
-Adds `CTRL_3` and/or `CTRL_4` because the device needs to distinguish memory and I/O transactions.
+Adds `CTRL_3` and/or `CTRL_4` because the device needs to distinguish memory and I/O transactions in addition to its `CS[3:0]` selection.
 
 This remains portable, but memory-mapped CPU boards may need to synthesize the distinction.
 
@@ -267,7 +336,7 @@ This remains portable, but memory-mapped CPU boards may need to synthesize the d
 
 Adds `CTRL_8` and `CTRL_9` for byte-lane qualification.
 
-The card should still use canonical `/RD` and `/WR` semantics rather than depending on a native 68k-style bus cycle.
+The card should still use canonical `/RD` and `/WR` semantics and `CS[3:0]` device selection rather than depending on a native 68k-style bus cycle.
 
 ### Profile D — Bus master / DMA device
 
@@ -303,6 +372,6 @@ That keeps the pBITz control block focused on compatibility rather than on repro
 
 ## 8. Source of truth
 
-This document is the source of truth for the **logical convention** associated with `CTRL_0` through `CTRL_19`.
+This document is the source of truth for the **logical convention** associated with `CTRL_0` through `CTRL_19`, the `CS[3:0]` device-selection convention, and the platform-level shared-bus idle/pull-up rule.
 
-It is **not** the source of truth for their physical connector locations. Physical signal placement, connector orientation, power pins, ground pins, and electrical implementation belong to the current pBITz backplane schematic and Backplane Architecture document.
+It is **not** the source of truth for physical connector locations or the component-level implementation of the pull-ups. Physical signal placement, connector orientation, power pins, ground pins, resistor values, clocks, SPI wiring, and other electrical implementation details belong to the current pBITz backplane schematic and Backplane Architecture document.
